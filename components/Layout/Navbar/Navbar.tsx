@@ -33,10 +33,10 @@ export default function Simple() {
         <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
         <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
             <HStack spacing={8} alignItems={'center'}>
-            <Box  h={'30px'} w={'130px'} p='1'>
-                <Link to="section1" smooth={true}>
+            <Box  h={'30px'} w={'130px'} p='1' cursor={'pointer'}>
+                <a href="/" >
                     <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
-                </Link>
+                </a>
             </Box>
             </HStack>
             <HStack as={'nav'}
@@ -77,7 +77,7 @@ export default function Simple() {
                     FAQ
                 </Link>
                 </Box>
-                <a href='#' style={{ paddingRight: '15px' }}>
+                <a href='/Login' style={{ paddingRight: '15px' }}>
                     <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>

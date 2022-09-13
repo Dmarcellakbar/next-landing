@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import phone from '../../../assets/images/phone-planet.png';
-import { Box, Container, Flex, Grid, GridItem, Heading, HStack, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Grid, GridItem, Heading, HStack, SimpleGrid, Stack, Text, VStack, Wrap } from '@chakra-ui/react';
 import AppStoreBadge from '../../../assets/images/ios.png';
 import PlayStoreBadge from '../../../assets/images/android.png';
 import bg from '../../../assets/images/bg-stardust.png'
@@ -34,6 +34,7 @@ export default function Home() {
         >
             <SimpleGrid 
             minChildWidth='120px' className="align-items-center"
+            
             >
             <GridItem alignItems={'center'}
             display={'flex'}
@@ -48,12 +49,12 @@ export default function Home() {
                     </Text>
                     <HStack spacing='10px' pb={'90px'} >
                         <Box>
-                        <a href="/download" target='_blank'>
+                        <a href="/Login" target='_blank'>
                             <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
                         </a>
                         </Box>
                         <Box>
-                        <a href="/download" target='_blank'>
+                        <a href="/Login" target='_blank'>
                             <Image width={'175%'} height={'75%'} src={PlayStoreBadge}/>
                         </a>
                         </Box>
@@ -65,9 +66,10 @@ export default function Home() {
                 display={'flex'}
                 flex={'1'}
                 >  
+                <Wrap style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '50px' }}>
                         {/* <Image src={phone} className="img-fluid mx-auto d-block"/>   */}
-                        <Image style={{ position: 'absolute' }} src={phone} />
-
+                        <Image  src={phone} />
+                </Wrap>
                 </GridItem>
             }
 

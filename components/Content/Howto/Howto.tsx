@@ -16,7 +16,7 @@ import {
   import Agreement from '../../../assets/images/agreement.png';
   import Aum from '../../../assets/images/aum-icon.png';
   
-  export default function SplitWithImage() {
+  export default function Howto() {
     const styling = {
         backgroundImage: `url('${bg.src}')`,
         backgroundSize: 'cover',
@@ -32,13 +32,13 @@ import {
             Onboarding process
         </Text>
       </VStack>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center" > 
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center" pl={'3%'} pr={'3%'} > 
             <Box
             role={'group'}
             p={6}
             w={'100%'}
             boxShadow={'2xl'}
-            rounded={'lg'}
+            rounded={'20'}
             pos={'relative'}
             zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}
@@ -67,7 +67,7 @@ import {
             p={6}
             w={'100%'}
             boxShadow={'2xl'}
-            rounded={'lg'}
+            rounded={'20'}
             pos={'relative'}
             zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}
@@ -96,7 +96,7 @@ import {
             p={6}
             w={'100%'}
             boxShadow={'2xl'}
-            rounded={'lg'}
+            rounded={'20'}
             pos={'relative'}
             zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}

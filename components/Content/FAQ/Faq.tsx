@@ -17,7 +17,7 @@ export default function Faq() {
             FAQ
         </Heading>
     </VStack>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} color={'#FFF'}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} color={'#FFF'} fontFamily={'Poppins'}>
         <VStack spacing={2} textAlign="left">
             <Accordion 
             title="Estimate yearly profit of CFund?" 

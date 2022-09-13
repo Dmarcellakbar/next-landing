@@ -8,14 +8,11 @@ import Footer from '../components/Layout/Footer/Footer'
 import Howto from '../components/Content/Howto/Howto'
 import Moreinfo from '../components/Content/Moreinfo/Moreinfo'
 import Faq from '../components/Content/FAQ/Faq'
+import Terms from '../components/Content/Terms/Terms'
+import News from '../components/Content/News/News'
 
 const Home: NextPage = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1000px)'
-  })
-  // const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
-  const isTablet = useMediaQuery({ query: '(max-width: 1000px)' })
-  
+
   return (
     <>
       <Navbar />
@@ -28,9 +25,16 @@ const Home: NextPage = () => {
       <Element className="element" name="section3" >
         <Howto />
       </Element>
+      <Element className="element" name="section4" >
+        <Terms />
+      </Element>
+      <Element className="element" name="section5" >
+        <News />
+      </Element>
       <Element className="element" name="section6" >
         <Faq/>
       </Element>
+
       <Moreinfo />
       <Footer />
     </>

@@ -6,7 +6,14 @@ import bg from '../../../assets/images/bg-contact.png'
 export default function Moreinfo() {
     const stylingbg = {
         backgroundImage: `url('${bg.src}')`,
-        backgroundSize: 'cover',
+        // backgroundSize: 'cover',
+        width: 'stretch',
+        height: 'hug content',
+        maxWidth: '80rem',
+        paddingTop: '4rem',
+        paddingBottom: '4rem',
+        paddingLeft: '2rem',
+        paddingRight: '2rem'
     }
     const styling = {
         backgroundColor: '#011535',
@@ -15,7 +22,7 @@ export default function Moreinfo() {
 
   return (
     <section style={styling} >
-        <Box p={'15%'}>
+        <Box pt={'5%'} pb={'5%'} pl={'20%'} pr={'20%'} fontFamily={'Poppins'} w={'100%'} h={'100%'}>
         <VStack rounded={'20'}  style={stylingbg}>
             <Box py={6} >
                     <div style={{ textAlign: 'center', marginTop: '10%'}}>
@@ -32,10 +39,10 @@ export default function Moreinfo() {
                     </div>
                 </Box>
                 <Box py={6} style={{ marginBottom: '10%' }}>
-                    <div style={{ textAlign: 'center'}}>
-                        <a href='mailto:cs@cfund.id'><Button p={'24px'} mr={'10'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></a>
-                        <a href='mailto:cs@cfund.id'><Button p={'24px'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></a>
-                    </div>
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+                        <a href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></a>
+                        <a href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></a>
+                    </SimpleGrid>
                 </Box>
         </VStack>
         </Box>

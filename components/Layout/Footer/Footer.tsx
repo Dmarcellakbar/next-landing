@@ -51,6 +51,7 @@ import {
     return (
       <section className="section position-relative">
       <Box
+        fontFamily={'Poppins'}
         pt={'10%'}
         pb={'10%'}
         bg={useColorModeValue('#011535', '#011535')}
@@ -66,7 +67,7 @@ import {
                 />
                 </Box>
             </Stack>
-            <Stack align={'flex-start'}>
+            <Stack align={'flex-start'} cursor={'pointer'}>
               <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Sitemap</Text>
               </div>

@@ -35,3 +35,13 @@ a {
   font-family: 'Poppins';
   font-weight: 100;
 }
+
+#button-test {
+  
+  color: white;
+}
+
+#button-test:hover {
+
+  color: white;
+}
