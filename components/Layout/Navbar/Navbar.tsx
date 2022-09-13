@@ -17,6 +17,7 @@ import {
   Stack,
   Spacer,
   ButtonGroup,
+  Container,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link } from 'react-scroll'
@@ -27,13 +28,21 @@ import { AiFillAppstore } from 'react-icons/ai';
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const styling = {
+    width: 'stretch', backgroundColor: '#011535', color: '#FFF',
+    backgroundSize: 'cover', 
+    maxWidth: '100%',
+    minWidth: '0'
+}
+
   return (
-      <Box px={4} style={{ position: 'fixed', zIndex: 1, width: '100%', backgroundColor: '#011535', color: '#FFF'}}>
-      <Flex h={16} alignItems='center' justifyContent={'space-between'}>          
+    <Container position={'fixed'} zIndex={'1'} style={styling}>
+      <Box px={4} w={'100%'} maxW={'80rem'}>
+      <HStack h={16} alignItems='center' align={'center'}>          
 
           <HStack spacing={8} alignItems={'center'}>
             <Box  h={'30px'} w={'130px'} p='1'>
-                <Image className='responsive' src={Logo}/>
+                <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
             </Box>
           </HStack>
             <HStack as={'nav'}
@@ -75,7 +84,7 @@ export default function Simple() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-        </Flex>
+        </HStack>
 
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }} fontSize={'24px'}>
@@ -98,7 +107,7 @@ export default function Simple() {
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
-                <a href='#' style={{ paddingRight: '15px' }}>
+                <a href='#'>
                     <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
                     </Button>
@@ -107,5 +116,6 @@ export default function Simple() {
           </Box>
         ) : null}
       </Box>
+      </Container>
   );
 }

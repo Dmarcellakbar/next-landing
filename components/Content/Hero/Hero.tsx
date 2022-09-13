@@ -38,15 +38,15 @@ export default function Hero() {
   return (
     <section style={styling}>
     <VStack 
+    verticalAlign={'bottom'}
     h={'stretch'}
     pt={'32px'}
     p={'0'}
     className='fontStyle' 
-    w={'stretch'} 
-    align='stretch'>
-        <Container w={'100%'} h={'stretch'} maxW={'80rem'} flexShrink={'auto'}>
-        <SimpleGrid minChildWidth='120px' w={'100%'} h={'stretch'} maxW={'80rem'}>
-           <Container w={'100%'} h={'stretch'}>
+    w={'stretch'} >
+        <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
+        <SimpleGrid minChildWidth='120px' >
+           <Container w={'100%'} h={'stretch'} >
             <h1 style={{ fontSize: '2.88rem', color: '#01E8AA', fontWeight: '900', lineHeight: '1', paddingTop: '90px', paddingBottom:'2rem', width: 'stretch', maxWidth: '80rem', height: 'hug content' }}>
                 The Best Management Firm Any Crypto Investor Can Dream of
             </h1>
@@ -67,9 +67,9 @@ export default function Hero() {
                 </HStack>
             </Container>
             {isDesktopOrLaptop &&
-            <VStack w={'stretch'} maxW={'100%'} h={'100%'} verticalAlign={'bottom'}>
+            <VStack w={'stretch'} maxW={'100%'} h={'100%'} verticalAlign={'text-bottom'} >
             <Image
-                style={{ width: 'stretch', height: '100%', maxWidth: '100%' }}
+                style={{ width: 'stretch', height: '100%', maxWidth: '100%', position: 'absolute', bottom: '0' }}
                 alt={'Login Image'}
                 objectFit={'cover'}
                 src={phone}
