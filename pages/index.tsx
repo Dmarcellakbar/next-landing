@@ -4,6 +4,7 @@ import Navbar from '../components/Layout/Navbar/Navbar'
 import { Element } from 'react-scroll'
 import Hero from '../components/Content/Hero/Hero'
 import Performance from '../components/Content/Performance/Performance'
+import Footer from '../components/Layout/Footer/Footer'
 
 const Home: NextPage = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Element className="element" name="section2" >
         <Performance />
       </Element>
+      <Footer />
     </>
   )
 }
