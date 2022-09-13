@@ -7,6 +7,7 @@ import PlayStoreBadge from '../../../assets/images/android.png';
 import bg from '../../../assets/images/bg-stardust.png'
 import { useMediaQuery } from 'react-responsive'
 import Running from './Running'
+import Link from 'next/link';
 
 export default function Home() {
     const isDesktopOrLaptop = useMediaQuery({
@@ -49,14 +50,14 @@ export default function Home() {
                     </Text>
                     <HStack spacing='10px' pb={'90px'} >
                         <Box>
-                        <a href="/Login" target='_blank'>
+                        <Link href="/Login" target='_blank'>
                             <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
-                        </a>
+                        </Link>
                         </Box>
                         <Box>
-                        <a href="/Login" target='_blank'>
+                        <Link href="/Login" target='_blank'>
                             <Image width={'175%'} height={'75%'} src={PlayStoreBadge}/>
-                        </a>
+                        </Link>
                         </Box>
                     </HStack>
                 </div>

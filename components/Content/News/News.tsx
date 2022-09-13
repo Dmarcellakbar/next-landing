@@ -10,6 +10,7 @@ import {
     Box,
   } from '@chakra-ui/react';
   import Image from 'next/image';
+import Link from 'next/link';
   import NewsImage from '../../../assets/images/news.png'
 
   export default function News() {
@@ -39,7 +40,7 @@ import {
         bg={'#01264c'}
         color={'#FFF'}
         >
-        <a href="https://blog.cfund.me/apa-itu-decentralized-science-desci/" id="button-test">
+        <Link href="https://blog.cfund.me/apa-itu-decentralized-science-desci/" id="button-test">
         <Box
           h={'210px'}
           bg={'gray.100'}
@@ -59,7 +60,7 @@ import {
                   </Text>
                 </Box>
         </Stack>
-        </a>
+        </Link>
       </Box>
 
       <Box
@@ -72,7 +73,7 @@ import {
         bg={'#01264c'}
         color={'#FFF'}
         >
-        <a href="https://blog.cfund.me/memanfaatkan-bear-market-saat-ini-untuk-menjadi-investor-yang-lebih-baik-di-bull-run-berikutnya/" id="button-test">
+        <Link href="https://blog.cfund.me/memanfaatkan-bear-market-saat-ini-untuk-menjadi-investor-yang-lebih-baik-di-bull-run-berikutnya/" id="button-test">
         <Box
           h={'210px'}
           bg={'gray.100'}
@@ -92,7 +93,7 @@ import {
                 </Text>
                 </Box>
         </Stack>
-        </a>
+        </Link>
       </Box>
 
       <Box
@@ -105,7 +106,7 @@ import {
         bg={'#01264c'}
         color={'#FFF'}
         >
-        <a href="https://blog.cfund.me/a-complete-guide-on-how-to-do-research-in-crypto/" id="button-test">
+        <Link href="https://blog.cfund.me/a-complete-guide-on-how-to-do-research-in-crypto/" id="button-test">
         <Box
           h={'210px'}
           bg={'gray.100'}
@@ -125,7 +126,7 @@ import {
                 </Text>
                 </Box>
         </Stack>
-        </a>
+        </Link>
       </Box>
 
       <Box
@@ -138,7 +139,7 @@ import {
         bg={'#01264c'}
         color={'#FFF'}
         >
-        <a href="https://blog.cfund.me/bagaimana-asia-tenggara-merangkul-era-web3/" id="button-test">
+        <Link href="https://blog.cfund.me/bagaimana-asia-tenggara-merangkul-era-web3/" id="button-test">
         <Box
           h={'210px'}
           bg={'gray.100'}
@@ -158,16 +159,16 @@ import {
                 </Text>
                 </Box>
         </Stack>
-        </a>
+        </Link>
       </Box>
 
         </SimpleGrid>
 
         <VStack spacing={2} pt={'4rem'} textAlign="center" mb={'4rem'}>
             <div style={{ textAlign: 'center'}}>
-                <a href='https://blog.cfund.me/' >
+                <Link href='https://blog.cfund.me/' >
                 <Button color={'white'} backgroundColor={'#ffa520'} as={'b'} fontSize={'16px'} p={'24px'}>See All News</Button>
-                </a>
+                </Link>
             </div>
         </VStack>
       </Container>

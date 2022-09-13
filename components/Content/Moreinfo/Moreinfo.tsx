@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Flex, useColorModeValue, HStack, Stack, Text, SimpleGrid, Button, VStack } from '@chakra-ui/react';
 import bg from '../../../assets/images/bg-contact.png'
+import Link from 'next/link';
 
 
 export default function Moreinfo() {
@@ -40,8 +41,8 @@ export default function Moreinfo() {
                 </Box>
                 <Box py={6} style={{ marginBottom: '10%' }}>
                     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                        <a href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></a>
-                        <a href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></a>
+                        <Link href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></Link>
+                        <Link href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></Link>
                     </SimpleGrid>
                 </Box>
         </VStack>
