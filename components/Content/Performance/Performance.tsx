@@ -1,36 +1,33 @@
 import React from 'react';
 import Image from 'next/image';
-import { Box, Text, VStack, Button, HStack, Container, SimpleGrid } from '@chakra-ui/react';
+// import tophud from '../../../assets/images/top-hud.svg';
+// import bothud from '../../../assets/images/bot-hud.svg';
+// import chart from '../../../assets/images/chart.png'
+import { Box, Text, VStack, Button, Container, GridItem, SimpleGrid } from '@chakra-ui/react';
+// import bg from '../../../assets/images/bg-stardust.png'
+// import Chart from './Chart/Chart'
 import chartNew from '../../../assets/images/chart-new.png'
 
 export default function Performance() {
-  const styling = {
-    // backgroundImage: `url('${bg.src}')`,
-    backgroundColor: '#011535',
-    backgroundSize: 'cover',
-    height: '100%', 
-    width: 'stretch',
-    maxWidth: '100%',
-    minWidth: '0'
-}
+      const styling = {
+        backgroundColor: '#011535',
+        width:"stretch",
+        height:"stretch",
+        maxWidth: '100%',
+        backgroundSize: 'cover',
+        paddingTop: '8rem', paddingBottom:'8rem'
+    }
     return (
     <section style={styling}>
-      <VStack 
-      h={'stretch'}
-      pt={'8rem'}
-      pb={'8rem'}
-      className='fontStyle' 
-      w={'stretch'} 
-      align='stretch'>
-        <Container w={'100%'} h={'stretch'} maxW={'80rem'} flexShrink={'auto'} pt={'8rem'} pb={'8rem'}>
-        <SimpleGrid columns={2} w={'100%'} h={'stretch'} maxW={'80rem'}>
-           <Container w={'100%'} h={'stretch'}>
-              <Box>
-                <Image src={chartNew}/>
-              </Box>
-            </Container>
+      <Container>
+        <SimpleGrid minChildWidth='120px' className="align-items-center">
+          <GridItem>
+            <Box>
+              <Image src={chartNew}/>
+            </Box>
+          </GridItem>
 
-            <VStack w={'stretch'} maxW={'100%'} h={'100%'}>
+          <GridItem>
             <Box>
               <br />
               <Text as={'b'} fontSize='2.88rem' color={'white'} lineHeight={'10'}>Our Performance</Text>
@@ -44,10 +41,9 @@ export default function Performance() {
                 </Text>
                 <a href='/download' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'}>See Performance Details</Button></a>
             </Box>
-            </VStack>
+          </GridItem>
         </SimpleGrid>
-        </Container>
-    </VStack>
+      </Container>
     </section>
   )
 }
