@@ -29,7 +29,7 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-      <Box px={4} style={{ position: 'fixed', zIndex: 1, width: 'stretch', maxWidth: '100%', backgroundColor: '#011535', color: '#FFF'}}>
+    <Box bg='#011535' h={'90px'} w={'stretch'} maxW={'100%'} color={'white'} fontWeight={'bold'} fontSize={'16px'} position={'fixed'} zIndex={'1'}>
         <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
         <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
             <HStack spacing={8} alignItems={'center'}>
@@ -42,26 +42,38 @@ export default function Simple() {
                 display={{ base: 'none', md: 'flex' }}
                 fontWeight={'bold'}
                 fontSize={'16px'}
-                cursor={'pointer'}
+                alignItems={'center'}
                 >
+                <Box cursor={'pointer'}>
                 <Link to="section1" smooth={true} >
                     Home
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section2" smooth={true} >
                     Performance
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section3" smooth={true} >
                     How to
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section4" smooth={true} >
                     Terms
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section5" smooth={true} >
                     News
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
+                </Box>
                 <a href='#' style={{ paddingRight: '15px' }}>
                     <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login

@@ -36,20 +36,20 @@ export default function Hero() {
       const isTablet = useMediaQuery({ query: '(max-width: 1000px)' })
       
   return (
-    <section style={styling}>
+    <section style={styling} >
     <VStack 
     verticalAlign={'bottom'}
     h={'stretch'}
     pt={'32px'}
-    p={'0'}
+    pb={'0'}
     className='fontStyle' 
     w={'stretch'} >
-        <Container w={'100%'} h={'100%'} maxW={'80rem'} >
+        <Container w={'100%'} h={'100%'} maxW={'80rem'} verticalAlign={'text-bottom'}>
         <SimpleGrid minChildWidth='120px' >
-           <Container w={'100%'} h={'stretch'} >
-            <h1 style={{ fontSize: '2.88rem', color: '#01E8AA', fontWeight: 'bold', lineHeight: '1', paddingTop: '90px', paddingBottom:'2rem', width: 'stretch', maxWidth: '80rem', height: 'hug content' }}>
-                The Best Management Firm Any Crypto Investor Can Dream of
-            </h1>
+           <Container w={'100%'} h={'100%'} alignContent={'center'}>
+            <Heading size='lg' fontSize='2.88rem' color={'#01E8AA'} pt={'90px'} lineHeight={'1.2'}>
+            The Best Management Firm Any Crypto Investor Can Dream of
+            </Heading>
             <Text fontSize={'16px'} color={'#FFFFFF'} style={{ paddingBottom:'2rem', maxWidth: '80rem', height: 'hug content' }}>
                 Our costumized strategy makes crypto investing safer, easier, and more effective for you
             </Text>
