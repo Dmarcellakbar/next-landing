@@ -32,7 +32,7 @@ export default function SplitWithImage() {
             CFund manages your capital with rigorous position sizing, advanced trading
             strategy, and a conservative stop loss.
           </Text>
-          <a href='/download' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
+          <a href='/Login' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
         </Stack>
         
       </SimpleGrid>
