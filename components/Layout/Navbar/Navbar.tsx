@@ -34,7 +34,9 @@ export default function Simple() {
         <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
             <HStack spacing={8} alignItems={'center'}>
             <Box  h={'30px'} w={'130px'} p='1'>
-                <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
+                <Link to="section1" smooth={true}>
+                    <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
+                </Link>
             </Box>
             </HStack>
             <HStack as={'nav'}

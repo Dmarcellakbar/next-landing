@@ -5,6 +5,9 @@ import { Element } from 'react-scroll'
 import Hero from '../components/Content/Hero/Hero'
 import Performance from '../components/Content/Performance/Performance'
 import Footer from '../components/Layout/Footer/Footer'
+import Howto from '../components/Content/Howto/Howto'
+import Moreinfo from '../components/Content/Moreinfo/Moreinfo'
+import Faq from '../components/Content/FAQ/Faq'
 
 const Home: NextPage = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -22,6 +25,13 @@ const Home: NextPage = () => {
       <Element className="element" name="section2" >
         <Performance />
       </Element>
+      <Element className="element" name="section3" >
+        <Howto />
+      </Element>
+      <Element className="element" name="section6" >
+        <Faq/>
+      </Element>
+      <Moreinfo />
       <Footer />
     </>
   )

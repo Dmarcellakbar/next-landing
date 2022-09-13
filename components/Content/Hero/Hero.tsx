@@ -31,7 +31,6 @@ export default function Home() {
     >
         <Container w={'100%'} h={'stretch'} maxW={'80rem'}
         display={'flex'}
-        position={'relative'}
         >
             <SimpleGrid 
             minChildWidth='120px' className="align-items-center"
@@ -67,7 +66,7 @@ export default function Home() {
                 flex={'1'}
                 >  
                         {/* <Image src={phone} className="img-fluid mx-auto d-block"/>   */}
-                        <Image style={{ position: 'absolute', display: 'flex', flex: '1' }} src={phone} className="img-fluid mx-auto d-block"/>
+                        <Image style={{ position: 'absolute' }} src={phone} />
 
                 </GridItem>
             }
