@@ -28,31 +28,23 @@ import { AiFillAppstore } from 'react-icons/ai';
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const styling = {
-    width: 'stretch', backgroundColor: '#011535', color: '#FFF',
-    backgroundSize: 'cover', 
-    maxWidth: '100%',
-    minWidth: '0'
-}
-
   return (
-    <Container position={'fixed'} zIndex={'1'} style={styling}>
-      <Box px={4} w={'100%'} maxW={'80rem'}>
-      <HStack h={16} alignItems='center' align={'center'}>          
-
-          <HStack spacing={8} alignItems={'center'}>
+      <Box px={4} style={{ position: 'fixed', zIndex: 1, width: 'stretch', maxWidth: '100%', backgroundColor: '#011535', color: '#FFF'}}>
+        <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
+        <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
+            <HStack spacing={8} alignItems={'center'}>
             <Box  h={'30px'} w={'130px'} p='1'>
                 <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
             </Box>
-          </HStack>
+            </HStack>
             <HStack as={'nav'}
-              spacing={4}
-              display={{ base: 'none', md: 'flex' }}
-              fontWeight={'bold'}
-              fontSize={'16px'}
-              cursor={'pointer'}
-              >
-              <Link to="section1" smooth={true} >
+                spacing={4}
+                display={{ base: 'none', md: 'flex' }}
+                fontWeight={'bold'}
+                fontSize={'16px'}
+                cursor={'pointer'}
+                >
+                <Link to="section1" smooth={true} >
                     Home
                 </Link>
                 <Link to="section2" smooth={true} >
@@ -76,18 +68,18 @@ export default function Simple() {
                     </Button>
                 </a>
                 </HStack>
-          <IconButton
+            <IconButton
             style={{ backgroundColor: '#011535' }}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <AiFillAppstore size={'sm'}/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
-          />
-        </HStack>
+            />
+            </HStack>
 
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }} fontSize={'24px'}>
+            {isOpen ? (
+            <Box pb={4} display={{ md: 'none' }} fontSize={'24px'}>
             <Stack as={'nav'} spacing={4} cursor={'pointer'}>
                 <Link to="section1" smooth={true} >
                     Home
@@ -113,9 +105,10 @@ export default function Simple() {
                     </Button>
                 </a>
             </Stack>
-          </Box>
-        ) : null}
+            </Box>
+            ) : null}      
+        </Container>
+      
       </Box>
-      </Container>
   );
 }

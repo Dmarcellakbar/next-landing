@@ -44,10 +44,10 @@ export default function Hero() {
     p={'0'}
     className='fontStyle' 
     w={'stretch'} >
-        <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
+        <Container w={'100%'} h={'100%'} maxW={'80rem'} >
         <SimpleGrid minChildWidth='120px' >
            <Container w={'100%'} h={'stretch'} >
-            <h1 style={{ fontSize: '2.88rem', color: '#01E8AA', fontWeight: '900', lineHeight: '1', paddingTop: '90px', paddingBottom:'2rem', width: 'stretch', maxWidth: '80rem', height: 'hug content' }}>
+            <h1 style={{ fontSize: '2.88rem', color: '#01E8AA', fontWeight: 'bold', lineHeight: '1', paddingTop: '90px', paddingBottom:'2rem', width: 'stretch', maxWidth: '80rem', height: 'hug content' }}>
                 The Best Management Firm Any Crypto Investor Can Dream of
             </h1>
             <Text fontSize={'16px'} color={'#FFFFFF'} style={{ paddingBottom:'2rem', maxWidth: '80rem', height: 'hug content' }}>
