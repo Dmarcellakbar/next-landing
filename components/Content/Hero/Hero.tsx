@@ -22,15 +22,16 @@ export default function Home() {
         backgroundSize: 'cover',
     }
   return (
-    <section className="section position-relative" style={styling}>
+    <section style={styling}>
     <VStack 
     pt={'32px'}
     h={'stretch'}
     w={'stretch'} >
-        <Container verticalAlign={'center'} w={'100%'} h={'stretch'} maxW={'80rem'}>
+        <Container w={'100%'} h={'stretch'} maxW={'80rem'}>
             <SimpleGrid minChildWidth='120px' className="align-items-center">
             <GridItem alignItems={'center'}>
-                <Heading fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
+                <div>
+                <Heading w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
                 The Best Management Firm Any Crypto Investor Can Dream of
                 </Heading>
                 <Text fontSize='16px' color={'#FFFFFF6a'} pb={'2rem'}>
@@ -48,6 +49,7 @@ export default function Home() {
                         </a>
                         </Box>
                     </HStack>
+                </div>
             </GridItem>
             {isDesktopOrLaptop && 
                 <GridItem verticalAlign={'bottom'}>  
