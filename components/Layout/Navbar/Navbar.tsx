@@ -23,7 +23,7 @@ export default function Simple() {
         <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
             <HStack spacing={8} alignItems={'center'}>
             <Box  h={'30px'} w={'130px'} p='1' cursor={'pointer'}>
-                <a href="/" >
+                <a href="#" >
                     <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
                 </a>
             </Box>
@@ -66,8 +66,8 @@ export default function Simple() {
                     FAQ
                 </Link>
                 </Box>
-                <a href='/Login' style={{ paddingRight: '15px' }}>
-                    <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
+                <a href='Login' style={{ paddingRight: '15px' }}>
+                    <Button  color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>
                 </a>

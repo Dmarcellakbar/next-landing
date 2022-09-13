@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 import chartNew from '../../../assets/images/chart-new.png'
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function SplitWithImage() {
   const styling = {
@@ -33,7 +32,7 @@ export default function SplitWithImage() {
             CFund manages your capital with rigorous position sizing, advanced trading
             strategy, and a conservative stop loss.
           </Text>
-          <Link href='/Login' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></Link>
+          <a href='Login' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
         </Stack>
         
       </SimpleGrid>
