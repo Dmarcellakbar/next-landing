@@ -26,15 +26,25 @@ export default function Home() {
     <VStack 
     pt={'32px'}
     h={'stretch'}
-    w={'stretch'} >
-        <Container w={'100%'} h={'stretch'} maxW={'80rem'}>
-            <SimpleGrid minChildWidth='120px' className="align-items-center">
-            <GridItem alignItems={'center'}>
+    w={'stretch'} 
+    position={'relative'}
+    >
+        <Container w={'100%'} h={'stretch'} maxW={'80rem'}
+        display={'flex'}
+        position={'relative'}
+        >
+            <SimpleGrid 
+            minChildWidth='120px' className="align-items-center"
+            >
+            <GridItem alignItems={'center'}
+            display={'flex'}
+            flex={'1'}
+            >
                 <div>
                 <Heading w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
                 The Best Management Firm Any Crypto Investor Can Dream of
                 </Heading>
-                <Text fontSize='16px' color={'#FFFFFF6a'} pb={'2rem'}>
+                <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} pb={'2rem'}>
                     Our costumized strategy makes crypto investing safer, easier, and more effective for you
                     </Text>
                     <HStack spacing='10px' pb={'90px'} >
@@ -52,9 +62,13 @@ export default function Home() {
                 </div>
             </GridItem>
             {isDesktopOrLaptop && 
-                <GridItem verticalAlign={'bottom'}>  
+                <GridItem 
+                display={'flex'}
+                flex={'1'}
+                >  
                         {/* <Image src={phone} className="img-fluid mx-auto d-block"/>   */}
-                        <Image src={phone} className="img-fluid mx-auto d-block"/>
+                        <Image style={{ position: 'absolute', display: 'flex', flex: '1' }} src={phone} className="img-fluid mx-auto d-block"/>
+
                 </GridItem>
             }
 

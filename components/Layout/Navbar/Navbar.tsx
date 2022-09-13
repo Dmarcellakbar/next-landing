@@ -38,6 +38,7 @@ export default function Simple() {
             </Box>
             </HStack>
             <HStack as={'nav'}
+                fontFamily={'Poppins'}
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}
                 fontWeight={'bold'}
@@ -75,7 +76,7 @@ export default function Simple() {
                 </Link>
                 </Box>
                 <a href='#' style={{ paddingRight: '15px' }}>
-                    <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
+                    <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>
                 </a>
