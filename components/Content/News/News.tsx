@@ -9,10 +9,7 @@ import {
     VStack,
     Box,
   } from '@chakra-ui/react';
-  import chartNew from '../../../assets/images/chart-new.png'
-  import bg from '../../../assets/images/bg-how-to.png'
   import Image from 'next/image';
-  import Satu from '../../../assets/images/satu.png'
   import NewsImage from '../../../assets/images/news.png'
 
   export default function News() {

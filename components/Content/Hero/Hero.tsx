@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import phone from '../../../assets/images/phone-planet.png';
-import { Box, Container, Flex, Grid, GridItem, Heading, HStack, SimpleGrid, Stack, Text, VStack, Wrap } from '@chakra-ui/react';
+import { Box, Container, GridItem, Heading, HStack, SimpleGrid,  Text, VStack, Wrap } from '@chakra-ui/react';
 import AppStoreBadge from '../../../assets/images/ios.png';
 import PlayStoreBadge from '../../../assets/images/android.png';
 import bg from '../../../assets/images/bg-stardust.png'
@@ -67,7 +67,6 @@ export default function Home() {
                 flex={'1'}
                 >  
                 <Wrap style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '50px' }}>
-                        {/* <Image src={phone} className="img-fluid mx-auto d-block"/>   */}
                         <Image  src={phone} />
                 </Wrap>
                 </GridItem>

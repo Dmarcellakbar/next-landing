@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {  Container, SimpleGrid, Heading, VStack } from '@chakra-ui/react';
 import Accordion from './Accordion'
 

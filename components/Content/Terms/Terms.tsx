@@ -8,7 +8,6 @@ import {
     Button,
     VStack,
   } from '@chakra-ui/react';
-  import chartNew from '../../../assets/images/chart-new.png'
   import Image from 'next/image';
   import bg from '../../../assets/images/bg-fee.png'
   import cycle from '../../../assets/images/cycle-ilustration.png';

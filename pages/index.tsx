@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import { useMediaQuery } from 'react-responsive'
 import Navbar from '../components/Layout/Navbar/Navbar'
 import { Element } from 'react-scroll'
 import Hero from '../components/Content/Hero/Hero'

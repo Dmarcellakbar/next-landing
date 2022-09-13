@@ -5,7 +5,6 @@ import {
     Stack,
     Text,
     Flex,
-    Tag,
     useColorModeValue,
     chakra,
     VisuallyHidden,

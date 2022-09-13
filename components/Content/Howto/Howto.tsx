@@ -9,7 +9,6 @@ import {
     VStack,
     Box,
   } from '@chakra-ui/react';
-  import chartNew from '../../../assets/images/chart-new.png'
   import bg from '../../../assets/images/bg-how-to.png'
   import Image from 'next/image';
   import Identity from '../../../assets/images/identity.png';

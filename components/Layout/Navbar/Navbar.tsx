@@ -1,25 +1,14 @@
 import { ReactNode } from 'react';
 import {
   Box,
-  Flex,
-  Avatar,
   HStack,
-//   Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
-  Spacer,
-  ButtonGroup,
   Container,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import {  CloseIcon } from '@chakra-ui/icons';
 import { Link } from 'react-scroll'
 import Image from 'next/image'
 import Logo from '../../../assets/images/cfund-text.png';
