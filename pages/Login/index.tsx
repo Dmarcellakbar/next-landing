@@ -42,12 +42,12 @@ import Navbar from '../../components/Layout/Navbar/Navbar';
             </Text>
             <HStack spacing='10px' pb={'90px'} >
                 <Box>
-                <a href="/Login" target='_blank'>
+                <a href="https://apps.apple.com/sg/app/cfund/id1580696846?l=id" target='_blank'>
                     <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
                 </a>
                 </Box>
                 <Box>
-                <a href="/Login" target='_blank'>
+                <a href="https://play.google.com/store/apps/details?id=id.cfund.app&hl=in&gl=US" target='_blank'>
                     <Image width={'175%'} height={'75%'} src={PlayStoreBadge}/>
                 </a>
                 </Box>
