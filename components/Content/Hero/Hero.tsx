@@ -45,7 +45,7 @@ export default function Home() {
                 <Heading w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
                 The Best Management Firm Any Crypto Investor Can Dream of
                 </Heading>
-                <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} pb={'2rem'}>
+                <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} >
                     Our costumized strategy makes crypto investing safer, easier, and more effective for you
                     </Text>
                     <HStack spacing='10px' pb={'90px'} >

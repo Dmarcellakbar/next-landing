@@ -38,7 +38,6 @@ import {
                 management fee, which is deducted from the initial investment value, and 20% performance fee deducted from the profit made during the fund
                 management process. In addition, CFund improses a locking period for the investor's fund, starting from quarterly basis.    
             </Text>
-            <a href='/download' target='_blank'><Button color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
           </Stack>
         <Flex>
           <Image src={cycle}/>
