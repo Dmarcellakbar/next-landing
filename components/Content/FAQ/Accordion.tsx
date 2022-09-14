@@ -19,8 +19,8 @@ export default function Accordion(props: any) {
         width: "100%",
         marginBottom: "15px",
         lineHeight: "20px",
-        border: "1px solid rgba(56, 176, 210, 0.5)",
-        borderRadius: '8px',
+        border: "1px solid rgba(56, 176, 210, 0.3)",
+        borderRadius: '6px',
       }}
     >
       <button
@@ -33,8 +33,8 @@ export default function Accordion(props: any) {
           background: "#01264C",
           outline: "none",
           cursor: "pointer",
-          borderTopLeftRadius: '15px',
-          borderTopRightRadius: '15px'
+          borderTopLeftRadius: '6px',
+          borderTopRightRadius: '6px'
 
         }}
         onClick={toggle}
@@ -73,7 +73,7 @@ export default function Accordion(props: any) {
         }}
       />
       <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px'}}
+        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", borderBottomLeftRadius: '6px', borderBottomRightRadius: '6px'}}
         dangerouslySetInnerHTML={{
           __html: props.subcontent4, 
         }}
