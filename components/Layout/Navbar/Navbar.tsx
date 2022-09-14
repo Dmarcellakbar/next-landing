@@ -84,25 +84,37 @@ export default function Simple() {
 
             {isOpen ? (
             <Box pb={4} display={{ md: 'none' }} fontSize={'24px'} fontWeight={'semibold'}>
-            <Stack as={'nav'} spacing={4} cursor={'pointer'}>
+            <Stack as={'nav'} spacing={4} >
+                <Box cursor={'pointer'}>
                 <Link to="section1" smooth={true} >
                     Home
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section2" smooth={true} >
                     Performance
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section3" smooth={true} >
                     How to
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section4" smooth={true} >
                     Terms
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section5" smooth={true} >
                     News
                 </Link>
+                </Box>
+                <Box cursor={'pointer'}>
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
+                </Box>
                 <a  href='Login'>
                     <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
