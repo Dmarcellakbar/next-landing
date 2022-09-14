@@ -103,7 +103,7 @@ export default function Simple() {
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
-                <a href='#'>
+                <a href='Login'>
                     <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
                     </Button>
