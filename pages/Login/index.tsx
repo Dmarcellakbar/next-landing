@@ -18,19 +18,18 @@ import Navbar from '../../components/Layout/Navbar/Navbar';
       backgroundColor: '#011535',
       backgroundSize: 'cover',
       color: '#FFF',
-      width:"stretch",
-      height:"100vh",
-      maxWidth: '100%',
   }
     return (
       <section style={styling}>
         <Navbar/>
-      <Container maxW={'5xl'}>
+      <Container maxW={'80rem'} height={'100vh'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
         <Stack
           textAlign={'center'}
           align={'center'}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}>
+          py={{ base: 20, md: 28 }}
+          display={'flex'}
+          >
           <Heading
             fontWeight={600}
             fontSize={'32px'}
@@ -53,7 +52,7 @@ import Navbar from '../../components/Layout/Navbar/Navbar';
                 </a>
                 </Box>
             </HStack>
-            <Flex style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0px', height: '40rem', width: '40rem'}}>
+            <Flex style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0px', height: '40%', width: '60%'}}>
                     <Image src={phone} />
             </Flex>
 
