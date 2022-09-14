@@ -11,7 +11,7 @@ export default function Faq() {
 
   return (
     <section style={styling}>
-    <Container maxW={'80rem'} pt={'8rem'} pb={'2rem'} verticalAlign={'center'}>
+    <Container maxW={'80rem'} pt={'1rem'} pb={'2rem'} verticalAlign={'center'}>
     <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
             FAQ

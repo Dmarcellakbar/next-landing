@@ -21,7 +21,7 @@ import {
     }
     return (
       <section style={styling}>
-      <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'} fontFamily='Poppins'>
+      <Container maxW={'80rem'} pt={'8rem'} pb={'3rem'} verticalAlign={'center'} fontFamily='Poppins'>
       <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
             News & Article
