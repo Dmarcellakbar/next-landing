@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, useColorModeValue, HStack, Stack, Text, SimpleGrid, Button, VStack } from '@chakra-ui/react';
+import { Box, Flex, useColorModeValue, HStack, Stack, Text, SimpleGrid, Button, VStack, Center } from '@chakra-ui/react';
 import bg from '../../../assets/images/bg-contact.png'
 import Link from 'next/link';
 
@@ -23,12 +23,13 @@ export default function Moreinfo() {
 
   return (
     <section style={styling} >
-        <Box pt={'5%'} pb={'5%'} pl={'20%'} pr={'20%'} fontFamily={'Poppins'} w={'100%'} h={'100%'}>
+
+        <Box pt={'5%'} pb={'5%'} pl={'12%'} pr={'12%'} fontFamily={'Poppins'} w={'100%'} h={'100%'}>
         <VStack rounded={'20'}  style={stylingbg}>
             <Box py={6} >
                     <div style={{ textAlign: 'center', marginTop: '10%'}}>
                         <div style={{ lineHeight: '1.2' }}>
-                        <Text as={'b'} fontSize='2.88rem' color={'white'} >
+                        <Text as={'b'} fontSize='2.5rem' color={'white'} >
                             Need more information?
                         </Text>
                         </div>

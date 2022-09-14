@@ -48,9 +48,34 @@ export default function Accordion(props: any) {
         }      
         </button>
       <div
+        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C",}}
+        dangerouslySetInnerHTML={{
+          __html: props.content, 
+        }}
+        
+      />
+      <div
+        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
+        dangerouslySetInnerHTML={{
+          __html: props.subcontent, 
+        }}
+      />
+      <div
+        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
+        dangerouslySetInnerHTML={{
+          __html: props.subcontent2, 
+        }}
+      />
+      <div
+        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
+        dangerouslySetInnerHTML={{
+          __html: props.subcontent3, 
+        }}
+      />
+      <div
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px'}}
         dangerouslySetInnerHTML={{
-          __html: props.content
+          __html: props.subcontent4, 
         }}
       />
     </div>

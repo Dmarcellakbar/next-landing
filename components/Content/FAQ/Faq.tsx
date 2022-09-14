@@ -57,7 +57,11 @@ export default function Faq() {
             />
             <Accordion 
             title="Estimate weekly and monthly profit?" 
-            content="Estimate profit percentage for every products on every quarter are below: (CFund Moon (semi-flexible product): Estimate profit per year is 10% > Capital lock: 1 month > Profit WD-able every month); (CFund Stars (mid range): Estimate profit per year is 20% > Capital lock: 3 month / 1 quarter > Profit WD-able every month); (CFund Galaxy (corporate / AI - accredited investor): Estimate profit per year is 30% > Capital lock: 3 month > Profit WD-able every month > Required → contact to CRM only → set a call with Arya & Kurnia (KYC level 2)); CFund Supernova is only for Foreigner customers (Singapore & Malaysia) - Estimate profit per year to be confirmed" 
+            content={"Estimate profit percentage for every products on every quarter are below: "}
+            subcontent="CFund Moon (semi-flexible product): Estimate profit per year is 10% > Capital lock: 1 month > Profit WD-able every month; "
+            subcontent2="CFund Stars (mid range): Estimate profit per year is 20% > Capital lock: 3 month / 1 quarter > Profit WD-able every month; "
+            subcontent3="CFund Galaxy (corporate / AI - accredited investor): Estimate profit per year is 30% > Capital lock: 3 month > Profit WD-able every month > Required → contact to CRM only → set a call with Arya & Kurnia (KYC level 2); "
+            subcontent4="CFund Supernova is only for Foreigner customers (Singapore & Malaysia) - Estimate profit per year to be confirmed"
             />
             <Accordion 
             title="The maximum drawdown at CFund?" 
@@ -73,11 +77,11 @@ export default function Faq() {
             />
             <Accordion 
             title="Maximum withdrawal every month?" 
-            content="Withdraw CFund Moon: remaining capital must be minimum Rp. 5.000.000 as stated on portfolio; Withdraw CFund Stars: remaining capital must be minimum Rp. 50.000.000 as stated on portfolio; Withdraw CFund Galaxy: remaining capital must be minimum Rp. 500.000.000 as stated on portfolio." 
+            content="Withdraw CFund Moon: remaining capital must be minimum 5.000.000 IDR as stated on portfolio; Withdraw CFund Stars: remaining capital must be minimum 50.000.000 IDR as stated on portfolio; Withdraw CFund Galaxy: remaining capital must be minimum 500.000.000 IDR as stated on portfolio." 
             />
             <Accordion 
             title="What and how to change Cfund products for customers?" 
-            content="Customer could perform the action via app by witdraw all capitals (after lock period was over) and re-deposit the funds to another products." 
+            content="Customer could perform the action via app by withdrawing all capitals (after lock period was over) and re-deposit the funds to another products." 
             />
         </VStack>
 
