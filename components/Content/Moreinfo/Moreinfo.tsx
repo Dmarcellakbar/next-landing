@@ -16,10 +16,10 @@ export default function Moreinfo() {
 
   return (
     <section style={styling} >
-    <VStack spacing={2} textAlign="center" pt={'8rem'}>
+    <VStack spacing={0} textAlign="center" pt={'3rem'} px={'2rem'}>
         <VStack rounded={'20'}  style={stylingbg} w={'auto'}>
-            <Box py={6} px={20}>
-                    <div style={{ textAlign: 'center', marginTop: '10%'}}>
+            <Box py={0} px={14}>
+                    <div style={{ textAlign: 'center', marginTop: '2rem'}}>
                         <div style={{ lineHeight: '1.2' }}>
                         <Text as={'b'} fontSize='2.5rem' color={'white'} >
                             Need more information?
