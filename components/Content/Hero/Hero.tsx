@@ -48,7 +48,7 @@ export default function Home() {
                 <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} >
                     Our costumized strategy makes crypto investing safer, easier, and more effective for you
                     </Text>
-                    <HStack spacing='10px' pb={'90px'} >
+                    <HStack spacing='10px' pb={'90px'} cursor={'pointer'}>
                         <Box>
                         <Link href="/Login" target='_blank'>
                             <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
