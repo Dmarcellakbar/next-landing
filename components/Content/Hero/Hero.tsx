@@ -48,13 +48,13 @@ export default function Home() {
                 <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} >
                     Our costumized strategy makes crypto investing safer, easier, and more effective for you
                     </Text>
-                    <HStack spacing='10px' pb={'90px'} cursor={'pointer'}>
-                        <Box>
+                    <HStack spacing='10px' pb={'90px'} >
+                        <Box cursor={'pointer'}>
                         <Link href="https://apps.apple.com/sg/app/cfund/id1580696846?l=id" target='_blank'>
                             <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
                         </Link>
                         </Box>
-                        <Box>
+                        <Box cursor={'pointer'}>
                         <Link href="https://play.google.com/store/apps/details?id=id.cfund.app&hl=in&gl=US" target='_blank'>
                             <Image width={'175%'} height={'75%'} src={PlayStoreBadge}/>
                         </Link>
