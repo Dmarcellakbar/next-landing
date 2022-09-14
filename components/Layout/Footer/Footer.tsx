@@ -116,29 +116,6 @@ import {
           </SimpleGrid>
         </Container>
         <Box py={10}>
-          <Flex
-            align={'center'}
-            _before={{
-              content: '""',
-              borderBottom: '1px solid',
-              borderColor: useColorModeValue('gray.200', 'gray.700'),
-              flexGrow: 1,
-              mr: 8,
-            }}
-            _after={{
-              content: '""',
-              borderBottom: '1px solid',
-              borderColor: useColorModeValue('gray.200', 'gray.700'),
-              flexGrow: 1,
-              ml: 8,
-            }}>
-            <Image
-            style={{ marginTop: '10%' }}
-            width={'50%'}
-            height={'50%'}
-            src={Logo}
-            />
-          </Flex>
           <Text pt={6} fontSize={'sm'} textAlign={'center'} color={'grey'}>
             © 2022 PT. Cuma Untuk Anak Negeri. All rights reserved
           </Text>

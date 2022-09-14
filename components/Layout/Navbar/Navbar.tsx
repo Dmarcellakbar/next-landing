@@ -32,7 +32,7 @@ export default function Simple() {
                 fontFamily={'Poppins'}
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}
-                fontWeight={'bold'}
+                fontWeight={'semibold'}
                 fontSize={'16px'}
                 alignItems={'center'}
                 >
@@ -67,7 +67,7 @@ export default function Simple() {
                 </Link>
                 </Box>
                 <a href='Login' style={{ paddingRight: '15px' }}>
-                    <Button  color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
+                    <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>
                 </a>
@@ -83,7 +83,7 @@ export default function Simple() {
             </HStack>
 
             {isOpen ? (
-            <Box pb={4} display={{ md: 'none' }} fontSize={'24px'}>
+            <Box pb={4} display={{ md: 'none' }} fontSize={'24px'} fontWeight={'semibold'}>
             <Stack as={'nav'} spacing={4} cursor={'pointer'}>
                 <Link to="section1" smooth={true} >
                     Home
@@ -103,8 +103,8 @@ export default function Simple() {
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
-                <a href='Login'>
-                    <Button color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
+                <a  href='Login'>
+                    <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
                     </Button>
                 </a>

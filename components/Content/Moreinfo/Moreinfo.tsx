@@ -7,14 +7,7 @@ import Link from 'next/link';
 export default function Moreinfo() {
     const stylingbg = {
         backgroundImage: `url('${bg.src}')`,
-        // backgroundSize: 'cover',
-        width: 'stretch',
-        height: 'hug content',
-        maxWidth: '80rem',
-        paddingTop: '4rem',
-        paddingBottom: '4rem',
-        paddingLeft: '2rem',
-        paddingRight: '2rem'
+        backgroundSize: 'cover',
     }
     const styling = {
         backgroundColor: '#011535',
@@ -23,10 +16,8 @@ export default function Moreinfo() {
 
   return (
     <section style={styling} >
-    <Container maxW={'80rem'} pt={'8rem'} pb={'2rem'} verticalAlign={'center'}>
-    <VStack spacing={2} textAlign="center" mb={'4rem'}>
-    <Box pt={'5%'} pb={'5%'} fontFamily={'Poppins'} w={'100%'} h={'100%'}>
-        <VStack rounded={'20'}  style={stylingbg}>
+    <VStack spacing={2} textAlign="center" pt={'8rem'}>
+        <VStack rounded={'20'}  style={stylingbg} w={'50rem'}>
             <Box py={6} >
                     <div style={{ textAlign: 'center', marginTop: '10%'}}>
                         <div style={{ lineHeight: '1.2' }}>
@@ -41,17 +32,16 @@ export default function Moreinfo() {
                         </Text>
                     </div>
                 </Box>
-                <Box py={6} style={{ marginBottom: '10%' }}>
-                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                        <Link href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></Link>
-                        <Link href='mailto:cs@cfund.id'><Button p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></Link>
+                <HStack>
+                <Box py={6} style={{ marginBottom: '2rem' }}>
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={15}>
+                        <Link href='mailto:cs@cfund.id'><Button id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Chat with Us</Button></Link>
+                        <Link href='mailto:cs@cfund.id'><Button id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>Send Email</Button></Link>
                     </SimpleGrid>
                 </Box>
+                </HStack>
         </VStack>
-        </Box>
     </VStack>
-    </Container>
-        
     </section>
   )
 }

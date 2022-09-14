@@ -11,6 +11,7 @@ import {
   } from '@chakra-ui/react';
   import Image from 'next/image';
   import NewsImage from '../../../assets/images/news.png'
+  import NextLink from 'next/link'
 
   export default function News() {
     const styling = {
@@ -165,9 +166,12 @@ import {
 
         <VStack spacing={2} pt={'4rem'} textAlign="center" mb={'4rem'}>
             <div style={{ textAlign: 'center'}}>
-                <a href='https://blog.cfund.me/' >
-                <Button color={'white'} backgroundColor={'#ffa520'} as={'b'} fontSize={'16px'} p={'24px'}>See All News</Button>
-                </a>
+                
+                <Button id='button-test2' variant='solid' backgroundColor={'#ffa520'} color={'white'} as={'b'} fontSize={'16px'} p={'24px'}>
+                <NextLink href='https://blog.cfund.me/'> 
+                  See All News
+                  </NextLink> 
+                  </Button>
             </div>
         </VStack>
       </Container>
