@@ -51,8 +51,8 @@ import {
       <section className="section position-relative">
       <Box
         fontFamily={'Poppins'}
-        pt={'10%'}
-        pb={'10%'}
+        pt={'3rem'}
+        pb={'2rem'}
         bg={useColorModeValue('#011535', '#011535')}
         color={useColorModeValue('gray.100', 'gray.100')}>
         <Container as={Stack} maxW={'6xl'} py={10}>

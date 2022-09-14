@@ -22,7 +22,7 @@ import {
     }
     return (
       <section style={styling}>
-      <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
+      <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'} zIndex={'0'}>
       <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
             Get into Digital Asset Market With Us!
@@ -31,7 +31,7 @@ import {
             Onboarding process
         </Text>
       </VStack>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center" pl={'3%'} pr={'3%'} > 
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center" pl={'3%'} pr={'3%'} zIndex={'0'}> 
             <Box
             role={'group'}
             p={6}
@@ -39,7 +39,6 @@ import {
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
-            zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
@@ -68,7 +67,6 @@ import {
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
-            zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
@@ -97,7 +95,6 @@ import {
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
-            zIndex={1}
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
