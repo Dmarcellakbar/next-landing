@@ -25,8 +25,6 @@ export default function Moreinfo() {
                             Need more information?
                         </Text>
                         </div>
-                        <br />
-                        <br />
                         <Text as={'b'} fontSize='32px' color={'white'}>
                             let's talk with us
                         </Text>
