@@ -12,6 +12,7 @@ import {
   import PlayStoreBadge from '../../assets/images/android.png';
   import phone from '../../assets/images/phone-planet.png';
 import Navbar from '../../components/Layout/Navbar/Navbar';
+import Crisp from '../../components/Chat/crisp';
 
   export default function CallToActionWithIllustration() {
     const styling = {
@@ -22,6 +23,7 @@ import Navbar from '../../components/Layout/Navbar/Navbar';
     return (
       <section style={styling}>
         <Navbar/>
+        <Crisp/>
       <Container maxW={'80rem'} height={'100vh'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
         <Stack
           textAlign={'center'}

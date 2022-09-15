@@ -9,12 +9,16 @@ import Moreinfo from '../components/Content/Moreinfo/Moreinfo'
 import Faq from '../components/Content/FAQ/Faq'
 import Terms from '../components/Content/Terms/Terms'
 import News from '../components/Content/News/News'
+import Crisp from '../components/Chat/crisp'
+// import { Crisp } from 'react-crisp';
+
 
 const Home: NextPage = () => {
 
   return (
     <>
       <Navbar />
+      <Crisp/>
       <Element className="element" name="section1" >
         <Hero />
       </Element>
