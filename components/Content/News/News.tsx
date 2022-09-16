@@ -12,6 +12,7 @@ import {
   import Image from 'next/image';
   import NewsImage from '../../../assets/images/news.png'
   import NextLink from 'next/link'
+  import axios from "axios";
 
   export default function News() {
     const styling = {

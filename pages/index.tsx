@@ -10,8 +10,7 @@ import Faq from '../components/Content/FAQ/Faq'
 import Terms from '../components/Content/Terms/Terms'
 import News from '../components/Content/News/News'
 import Crisp from '../components/Chat/crisp'
-// import { Crisp } from 'react-crisp';
-
+import Getnews from '../components/Content/News/Getnews'
 
 const Home: NextPage = () => {
 
@@ -32,7 +31,7 @@ const Home: NextPage = () => {
         <Terms />
       </Element>
       <Element className="element" name="section5" >
-        <News />
+        <Getnews />
       </Element>
       <Element className="element" name="section6" >
         <Faq/>
