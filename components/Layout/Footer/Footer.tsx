@@ -70,36 +70,24 @@ import {
               <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Sitemap</Text>
               </div>
-              <Box cursor={'pointer'}>
               <Link to="section1" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
-                <Text fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>Home</Text>
+                <Text cursor={'pointer'} fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>Home</Text>
               </Link>
-              </Box>
-              <Box cursor={'pointer'}>
               <Link to="section2" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
-                <Text fontSize={'16px'}  style={{ textAlign:'center', color: 'white' }}>Performance</Text>
+                <Text cursor={'pointer'} fontSize={'16px'}  style={{ textAlign:'center', color: 'white' }}>Performance</Text>
               </Link>
-              </Box>
-              <Box cursor={'pointer'}>
               <Link to="section3" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
-                <Text fontSize={'16px'}  style={{ textAlign:'center', color: 'white' }}>How to</Text>
+                <Text cursor={'pointer'} fontSize={'16px'}  style={{ textAlign:'center', color: 'white' }}>How to</Text>
               </Link>
-              </Box>
-              <Box cursor={'pointer'}>
               <Link to="section4" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
-                <Text  fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>Terms</Text>
+                <Text cursor={'pointer'} fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>Terms</Text>
               </Link>
-              </Box>
-              <Box cursor={'pointer'}>
               <Link to="section5" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
-                <Text fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>News</Text>
+                <Text cursor={'pointer'} fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>News</Text>
               </Link>
-              </Box>
-              <Box cursor={'pointer'}>
               <Link to="section6" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%'}}>
-                <Text fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>FAQ</Text>
+                <Text cursor={'pointer'} fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>FAQ</Text>
               </Link>
-              </Box>
             </Stack>
             <Stack align={'flex-start'}>
             <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
