@@ -12,6 +12,7 @@ import {
     Box,
   } from '@chakra-ui/react';
  import dateFormat from "dateformat";
+ import Link from "next/link";
 
 export default class Getnews extends React.Component {
     state = {
@@ -48,18 +49,19 @@ export default class Getnews extends React.Component {
             </VStack>
             <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10} textAlign="left" pl={'3%'} pr={'3%'} > 
             {this.state.posts.map((post) => (
+            <a href={post._embedded["wp:featuredmedia"][0].link} id="button-test">
             <Box
                 key={post}
                 maxW={'445px'}
                 w={'full'}
-                boxShadow={'2xl'}
+                h={'full'}
+                boxShadow={'3xl'}
                 rounded={'20'}
                 p={6}
                 overflow={'hidden'}
                 bg={'#01264c'}
                 color={'#FFF'}
                 >
-                <a href={post._embedded["wp:featuredmedia"][0].link} id="button-test">
                 <Box
                 h={'stretch'}
                 bg={'gray.100'}
@@ -81,15 +83,14 @@ export default class Getnews extends React.Component {
                         </Text>
                         </Box>
                 </Stack>
-                </a>
             </Box>
+            </a>
+
             ))}
             </SimpleGrid>
-
-            {/* <div style={{ color: "blue" }}> {post.title.rendered} </div>
-            <div>{post.excerpt.rendered}</div>
-            <div><img src={post._embedded["wp:featuredmedia"][0].source_url}/></div> */}
-
+            <VStack spacing={2} textAlign="center" mt={'2rem'} mb={'2rem'}>
+            <Link href={'https://blog.cfund.me/'} ><Button id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>View More</Button></Link>
+            </VStack>
             
             </Container>
           </section>

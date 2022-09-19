@@ -36,20 +36,24 @@ a {
   font-weight: 100;
 }
 
-#button-test {
-  
-  color: white;
-}
+
 
 #button-test:hover {
-
-  color: white;
+  height: 'stretch';
+  box-shadow: #ffa520;
+  background-color: black;
 }
 
 #button-test2 {
   background-color: #ffa520;
   color: white;
 }
+
+#button-test3 {
+  background-color: transparent;
+  color: #ffa520;
+}
+
 
 #button-test2:hover {
   background-color: #ffa520;
