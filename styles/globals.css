@@ -41,7 +41,7 @@ a {
 #button-test:hover {
   height: 'stretch';
   box-shadow: #ffa520;
-  background-color: black;
+  background-color: transparent;
 }
 
 #button-test2 {
