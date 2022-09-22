@@ -7,6 +7,7 @@ import {
     Stack,
     Button,
     VStack,
+    Box,
   } from '@chakra-ui/react';
   import Image from 'next/image';
   import bg from '../../../assets/images/bg-fee.png'
@@ -24,7 +25,7 @@ import {
         backgroundSize: 'cover',
     }
     return (
-      <section style={styling}>
+      <Box style={styling}>
       <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
       {isDesktopOrLaptop &&
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
@@ -64,6 +65,6 @@ import {
         }
 
       </Container>
-      </section>
+      </Box>
     );
   }

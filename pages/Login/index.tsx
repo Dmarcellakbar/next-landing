@@ -13,6 +13,7 @@ import {
   import phone from '../../assets/images/phone-planet.png';
 import Navbar from '../../components/Layout/Navbar/Navbar';
 import Crisp from '../../components/Chat/crisp';
+import NextLink from 'next/link'
 
   export default function CallToActionWithIllustration() {
     const styling = {
@@ -21,7 +22,7 @@ import Crisp from '../../components/Chat/crisp';
       color: '#FFF',
   }
     return (
-      <section style={styling}>
+      <Box style={styling}>
         <Navbar/>
         <Crisp/>
       <Container maxW={'80rem'} height={'100vh'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
@@ -44,14 +45,14 @@ import Crisp from '../../components/Chat/crisp';
             </Text>
             <HStack spacing='10px' pb={'90px'} >
                 <Box cursor={'pointer'}>
-                <a href="https://apps.apple.com/sg/app/cfund/id1580696846?l=id" target='_blank'>
+                <NextLink href="https://apps.apple.com/sg/app/cfund/id1580696846?l=id" target='_blank'>
                     <Image width={'150%'} height={'50%'} src={AppStoreBadge}/>
-                </a>
+                </NextLink>
                 </Box>
                 <Box cursor={'pointer'}>
-                <a href="https://play.google.com/store/apps/details?id=id.cfund.app&hl=in&gl=US" target='_blank'>
+                <NextLink href="https://play.google.com/store/apps/details?id=id.cfund.app&hl=in&gl=US" target='_blank'>
                     <Image width={'175%'} height={'75%'} src={PlayStoreBadge}/>
-                </a>
+                </NextLink>
                 </Box>
             </HStack>
             <Flex style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0px', height: '40%', width: '60%'}}>
@@ -60,7 +61,7 @@ import Crisp from '../../components/Chat/crisp';
 
         </Stack>
       </Container>
-      </section>
+      </Box>
     );
   }
   

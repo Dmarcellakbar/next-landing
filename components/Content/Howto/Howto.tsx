@@ -21,7 +21,7 @@ import {
         backgroundSize: 'cover',
     }
     return (
-      <section style={styling}>
+      <Box style={styling}>
       <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'} zIndex={'0'}>
       <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
@@ -42,7 +42,7 @@ import {
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
-                    <Box>
+                    <Box p={'32px'}>
                         <Image src={Identity} style={{ width: '15rem', maxWidth: '100%', height: 'auto' }}/>
                     </Box>
                     <Heading mt={'2rem'} mb={'2rem'} fontSize='20px' color={'#FFF'} fontWeight={'700'} fontFamily={'Poppins'}>
@@ -70,7 +70,7 @@ import {
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
-                    <Box>
+                    <Box p={'32px'}>
                         <Image src={Agreement} style={{ width: '15rem', maxWidth: '100%', height: 'auto' }}/>
                     </Box>
                     <Heading mt={'2rem'} mb={'2rem'} fontSize='20px' color={'#FFF'} fontWeight={'700'} fontFamily={'Poppins'}>
@@ -98,7 +98,7 @@ import {
             bg={'rgba(1, 38, 76, 0.5)'}
             >
                 <Stack textAlign={'center'} spacing={4} align={'center'} verticalAlign={'middle'} alignContent={'center'}>
-                    <Box>
+                    <Box p={'32px'}>
                         <Image src={Aum} style={{ width: '15rem', maxWidth: '100%', height: 'auto' }}/>
                     </Box>
                     <Heading mt={'2rem'} mb={'2rem'} fontSize='20px' color={'#FFF'} fontWeight={'700'} fontFamily={'Poppins'}>
@@ -115,6 +115,6 @@ import {
           
         </SimpleGrid>
       </Container>
-      </section>
+      </Box>
     );
   }

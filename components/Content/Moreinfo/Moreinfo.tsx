@@ -16,20 +16,20 @@ export default function Moreinfo() {
     }
 
   return (
-    <section style={styling} >
+    <Box style={styling} >
     <VStack spacing={0} textAlign="center" pt={'3rem'} px={'2rem'}>
         <VStack rounded={'20'} style={stylingbg} w={'stretch'} maxW={'80rem'}>
             <Box py={0}>
-                    <div style={{ textAlign: 'center', marginTop: '2rem'}}>
-                        <div style={{ lineHeight: '1.2' }}>
+                    <VStack style={{ textAlign: 'center', marginTop: '2rem'}}>
+                        <Box style={{ lineHeight: '1.2' }}>
                         <Text as={'b'} fontSize='2.5rem' color={'white'} >
                             Need more information?
                         </Text>
-                        </div>
+                        </Box>
                         <Text as={'b'} fontSize='32px' color={'white'}>
                             let's talk with us
                         </Text>
-                    </div>
+                    </VStack>
                 </Box>
                 <VStack>
                 <HStack>
@@ -47,6 +47,6 @@ export default function Moreinfo() {
                 </VStack>
         </VStack>
     </VStack>
-    </section>
+    </Box>
   )
 }

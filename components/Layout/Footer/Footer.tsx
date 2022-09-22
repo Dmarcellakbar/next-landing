@@ -14,6 +14,7 @@ import {
   import Image from 'next/image';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { Link } from 'react-scroll'
+  import NextLink from 'next/link'
 
   const SocialButton = ({
     children,
@@ -48,7 +49,7 @@ import {
   
   export default function Footer() {
     return (
-      <section className="section position-relative">
+      <Box className="section position-relative">
       <Box
         fontFamily={'Poppins'}
         pt={'3rem'}
@@ -67,9 +68,9 @@ import {
                 </Box>
             </Stack>
             <Stack align={'flex-start'}>
-              <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
+              <Box style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Sitemap</Text>
-              </div>
+              </Box>
               <Link to="section1" smooth={true} style={{ backgroundColor:'transparent', marginRight: '5%' }}>
                 <Text cursor={'pointer'} fontSize={'16px'} style={{ textAlign:'center', color: 'white' }}>Home</Text>
               </Link>
@@ -90,17 +91,17 @@ import {
               </Link>
             </Stack>
             <Stack align={'flex-start'}>
-            <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
+            <Box style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Disclaimer</Text>
-              </div>
-              <a href={'https://info.cfund.me/terms-and-conditions/'} >Terms & Conditions</a>
-              <a href={'https://info.cfund.me/terms-and-conditions/'} >Privacy Policy</a>
-              <a href={'https://info.cfund.me/how-to-referrals/'} >How to Referrals</a>
+              </Box>
+              <NextLink href={'https://info.cfund.me/terms-and-conditions/'} >Terms & Conditions</NextLink>
+              <NextLink href={'https://info.cfund.me/terms-and-conditions/'} >Privacy Policy</NextLink>
+              <NextLink href={'https://info.cfund.me/how-to-referrals/'} >How to Referrals</NextLink>
             </Stack>
             <Stack align={'flex-start'}>
-            <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
+            <Box style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Social Media</Text>
-              </div>
+              </Box>
               <Stack direction={'row'} spacing={6}>
                 {/* <SocialButton label={'Twitter'} href={'#'}>
                     <FaTwitter />
@@ -121,6 +122,6 @@ import {
           </Text>
         </Box>
       </Box>
-      </section>
+      </Box>
     );
   }

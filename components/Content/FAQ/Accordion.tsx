@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { Box, Button, Text } from "@chakra-ui/react";
+
 
 export default function Accordion(props: any) {
   const [isShowing, setIsShowing] = useState(false);
@@ -14,7 +16,7 @@ export default function Accordion(props: any) {
   };
 
   return (
-    <div
+    <Box
       style={{
         width: "100%",
         marginBottom: "15px",
@@ -23,7 +25,7 @@ export default function Accordion(props: any) {
         borderRadius: '6px',
       }}
     >
-      <button
+      <Button
         style={{
           width: "100%",
           position: "relative",
@@ -40,44 +42,44 @@ export default function Accordion(props: any) {
         onClick={toggle}
         type="button"
       >
-        <p>{props.title}</p>
+        <Text>{props.title}</Text>
         {
             isShowing === props.title ?
             <ChevronUpIcon style={{float: 'right', color: '#38b0d2'}}/> :
             <ChevronDownIcon style={{float: 'right', color: '#38b0d2'}}/>
         }      
-        </button>
-      <div
+        </Button>
+      <Box
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C",}}
         dangerouslySetInnerHTML={{
           __html: props.content, 
         }}
         
       />
-      <div
+      <Box
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
         dangerouslySetInnerHTML={{
           __html: props.subcontent, 
         }}
       />
-      <div
+      <Box
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
         dangerouslySetInnerHTML={{
           __html: props.subcontent2, 
         }}
       />
-      <div
+      <Box
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
         dangerouslySetInnerHTML={{
           __html: props.subcontent3, 
         }}
       />
-      <div
+      <Box
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", borderBottomLeftRadius: '6px', borderBottomRightRadius: '6px'}}
         dangerouslySetInnerHTML={{
           __html: props.subcontent4, 
         }}
       />
-    </div>
+    </Box>
   );
 }

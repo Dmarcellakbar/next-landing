@@ -13,6 +13,7 @@ import {
   } from '@chakra-ui/react';
  import dateFormat from "dateformat";
  import Link from "next/link";
+import Image from "next/image";
 
 export default class Getnews extends React.Component {
     state = {
@@ -40,7 +41,7 @@ export default class Getnews extends React.Component {
     const parse = require('html-react-parser');
 
     return (
-          <section style={styling}>
+          <Box style={styling}>
              <Container maxW={'80rem'} pt={'8rem'} pb={'3rem'} verticalAlign={'center'} fontFamily='Poppins'>
             <VStack spacing={2} textAlign="center" mb={'4rem'}>
                 <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
@@ -49,7 +50,7 @@ export default class Getnews extends React.Component {
             </VStack>
             <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10} textAlign="left" pl={'3%'} pr={'3%'} > 
             {this.state.posts.map((post) => (
-            <a href={post._embedded["wp:featuredmedia"][0].link} id="button-test">
+            <Link href={post._embedded["wp:featuredmedia"][0].link} id="button-test">
             <Box
                 key={post}
                 maxW={'445px'}
@@ -84,7 +85,7 @@ export default class Getnews extends React.Component {
                         </Box>
                 </Stack>
             </Box>
-            </a>
+            </Link>
 
             ))}
             </SimpleGrid>
@@ -93,7 +94,7 @@ export default class Getnews extends React.Component {
             </VStack>
             
             </Container>
-          </section>
+          </Box>
     );
   }
 }

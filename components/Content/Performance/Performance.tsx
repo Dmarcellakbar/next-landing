@@ -6,9 +6,11 @@ import {
   Text,
   Stack,
   Button,
+  Box,
 } from '@chakra-ui/react';
 import chartNew from '../../../assets/images/chart-new.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SplitWithImage() {
   const styling = {
@@ -16,7 +18,7 @@ export default function SplitWithImage() {
     backgroundSize: 'cover',
 }
   return (
-    <section style={styling}>
+    <Box style={styling}>
     <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
       <Flex>
@@ -32,11 +34,13 @@ export default function SplitWithImage() {
             CFund manages your capital with rigorous position sizing, advanced trading
             strategy, and a conservative stop loss.
           </Text>
-          <a href='Login' target='_blank'><Button id='button-test2' color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
+          <Box w={'auto'}>
+          <Link href='Login' target='_blank'><Button id='button-test2' color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></Link>
+          </Box>
         </Stack>
         
       </SimpleGrid>
     </Container>
-    </section>
+    </Box>
   );
 }
