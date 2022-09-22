@@ -13,20 +13,19 @@ import { Link } from 'react-scroll'
 import Image from 'next/image'
 import Logo from '../../../assets/images/cfund-text.png';
 import { AiFillAppstore } from 'react-icons/ai';
-import NextLink from 'next/link'
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Container bg='#011535' h={'hug content'} w={'stretch'} maxW={'100%'} color={'white'} fontWeight={'bold'} fontSize={'16px'} position={'fixed'} zIndex={'1'}>
+    <Box bg='#011535' h={'hug content'} w={'stretch'} maxW={'100%'} color={'white'} fontWeight={'bold'} fontSize={'16px'} position={'fixed'} zIndex={'1'}>
         <Container w={'100%'} h={'stretch'} maxW={'80rem'} >
         <HStack h={16} alignItems='center' justifyContent={'space-between'} mr={'2%'}>          
             <HStack spacing={8} alignItems={'center'}>
             <Box  h={'30px'} w={'130px'} p='1' cursor={'pointer'}>
-                <NextLink href="/" >
+                <a href="/" >
                     <Image style={{ height: '24px', width: 'auto' }} className='responsive' src={Logo}/>
-                </NextLink>
+                </a>
             </Box>
             </HStack>
             <HStack as={'nav'}
@@ -37,41 +36,41 @@ export default function Simple() {
                 fontSize={'16px'}
                 alignItems={'center'}
                 >
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section1" smooth={true} >
                     Home
                 </Link>
                 </Box>
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section2" smooth={true} >
                     Performance
                 </Link>
                 </Box>
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section3" smooth={true} >
-                    HowTo
+                    How to
                 </Link>
                 </Box>
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section4" smooth={true} >
                     Terms
                 </Link>
                 </Box>
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section5" smooth={true} >
                     News
                 </Link>
                 </Box>
-                <Box cursor={'pointer'} w={'auto'}>
+                <Box cursor={'pointer'}>
                 <Link to="section6" smooth={true} >
                     FAQ
                 </Link>
                 </Box>
-                <NextLink href='Login' style={{ paddingRight: '15px' }}>
+                <a href='Login' style={{ paddingRight: '15px' }}>
                     <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>
-                </NextLink>
+                </a>
                 </HStack>
             <IconButton
             style={{ backgroundColor: '#011535' }}
@@ -116,16 +115,16 @@ export default function Simple() {
                     FAQ
                 </Link>
                 </Box>
-                <NextLink  href='Login'>
+                <a  href='Login'>
                     <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
                     </Button>
-                </NextLink>
+                </a>
             </Stack>
             </Box>
             ) : null}      
         </Container>
       
-      </Container>
+      </Box>
   );
 }

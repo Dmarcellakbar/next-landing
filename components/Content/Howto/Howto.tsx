@@ -21,7 +21,7 @@ import {
         backgroundSize: 'cover',
     }
     return (
-      <Box style={styling}>
+      <section style={styling}>
       <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'} zIndex={'0'}>
       <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
@@ -115,6 +115,6 @@ import {
           
         </SimpleGrid>
       </Container>
-      </Box>
+      </section>
     );
   }

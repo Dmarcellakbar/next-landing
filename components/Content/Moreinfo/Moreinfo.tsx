@@ -16,7 +16,7 @@ export default function Moreinfo() {
     }
 
   return (
-    <Box style={styling} >
+    <section style={styling} >
     <VStack spacing={0} textAlign="center" pt={'3rem'} px={'2rem'}>
         <VStack rounded={'20'} style={stylingbg} w={'stretch'} maxW={'80rem'}>
             <Box py={0}>
@@ -47,6 +47,6 @@ export default function Moreinfo() {
                 </VStack>
         </VStack>
     </VStack>
-    </Box>
+    </section>
   )
 }

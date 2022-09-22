@@ -13,7 +13,6 @@ import {
   } from '@chakra-ui/react';
  import dateFormat from "dateformat";
  import Link from "next/link";
-import Image from "next/image";
 
 export default class Getnews extends React.Component {
     state = {
@@ -41,7 +40,7 @@ export default class Getnews extends React.Component {
     const parse = require('html-react-parser');
 
     return (
-          <Box style={styling}>
+          <section style={styling}>
              <Container maxW={'80rem'} pt={'8rem'} pb={'3rem'} verticalAlign={'center'} fontFamily='Poppins'>
             <VStack spacing={2} textAlign="center" mb={'4rem'}>
                 <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
@@ -94,7 +93,7 @@ export default class Getnews extends React.Component {
             </VStack>
             
             </Container>
-          </Box>
+          </section>
     );
   }
 }

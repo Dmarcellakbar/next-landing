@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Container, SimpleGrid, Heading, VStack, Box } from '@chakra-ui/react';
+import {  Container, SimpleGrid, Heading, VStack } from '@chakra-ui/react';
 import Accordion from './Accordion'
 
 
@@ -10,7 +10,7 @@ export default function Faq() {
     }
 
   return (
-    <Box style={styling}>
+    <section style={styling}>
     <Container maxW={'80rem'} pt={'1rem'} pb={'2rem'} verticalAlign={'center'}>
     <VStack spacing={2} textAlign="center" mb={'4rem'}>
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
@@ -87,6 +87,6 @@ export default function Faq() {
 
       </SimpleGrid>
     </Container>
-    </Box>
+    </section>
   )
 }

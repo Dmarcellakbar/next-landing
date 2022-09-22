@@ -23,7 +23,7 @@ export default function Home() {
         backgroundSize: 'cover',
     }
   return (
-    <Box style={styling}>
+    <section style={styling}>
     <VStack 
     pt={'32px'}
     h={'stretch'}
@@ -41,7 +41,7 @@ export default function Home() {
             display={'flex'}
             flex={'1'}
             >
-                <Box>
+                <div>
                 <Heading w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
                 The Best Management Firm Any Crypto Investor Can Dream of
                 </Heading>
@@ -60,7 +60,7 @@ export default function Home() {
                         </Link>
                         </Box>
                     </HStack>
-                </Box>
+                </div>
             </GridItem>
             {isDesktopOrLaptop && 
                 <GridItem 
@@ -77,6 +77,6 @@ export default function Home() {
         </Container>
         <Running />
       </VStack>
-    </Box>
+    </section>
   )
 }

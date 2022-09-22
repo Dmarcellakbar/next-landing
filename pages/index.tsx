@@ -10,11 +10,15 @@ import Faq from '../components/Content/FAQ/Faq'
 import Terms from '../components/Content/Terms/Terms'
 import Crisp from '../components/Chat/crisp'
 import Getnews from '../components/Content/News/Getnews'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
 
   return (
     <>
+    <Head>
+      <link rel="shortcut icon" href="/logo-white.png" />
+    </Head>
       <Navbar />
       <Crisp/>
       <Element className="element" name="section1" >
