@@ -61,6 +61,7 @@ export default class Getnews extends React.Component {
                 overflow={'hidden'}
                 bg={'#01264c'}
                 color={'#FFF'}
+                cursor={'pointer'}
                 >
                 <Box
                 h={'stretch'}
