@@ -26,7 +26,7 @@ import {
       
   };
   const item2 = {
-    hidden: { x: 30, opacity: 1 },
+    hidden: { x: 50, opacity: 1 },
       visible: {
           x: 0,
           opacity: 1,
@@ -59,9 +59,9 @@ import {
 
 
     const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 800px)'
+        query: '(min-width: 900px)'
       })
-      const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+      const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
       
     const styling = {
         backgroundImage: `url('${bg.src}')`,

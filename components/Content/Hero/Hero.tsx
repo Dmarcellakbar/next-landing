@@ -10,6 +10,7 @@ import Running from './Running'
 import Link from 'next/link';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Particle from '../../Animation/Particle';
 
 const item = {
     hidden: { y: 150, opacity: 0 },
@@ -53,17 +54,19 @@ export default function Home() {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 750px)'
       })
-    //   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
-      
-    const styling = {
+
+  return (
+    <section style={{ 
         backgroundImage: `url('${bg.src}')`,
         width:"stretch",
         height:"100vh",
         maxWidth: '100%',
         backgroundSize: 'cover',
-    }
-  return (
-    <section style={styling}>
+        position: 'relative',
+     }}>
+       <div id="tsparticles">
+         <Particle/>
+         </div>
     <VStack 
     pt={'32px'}
     h={'stretch'}
