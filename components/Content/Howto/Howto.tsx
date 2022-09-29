@@ -8,14 +8,46 @@ import {
     Button,
     VStack,
     Box,
-  } from '@chakra-ui/react';
-  import bg from '../../../assets/images/bg-how-to.png'
-  import Image from 'next/image';
-  import Identity from '../../../assets/images/identity.png';
-  import Agreement from '../../../assets/images/agreement.png';
-  import Aum from '../../../assets/images/aum-icon.png';
-  
+} from '@chakra-ui/react';
+import bg from '../../../assets/images/bg-how-to.png'
+import Image from 'next/image';
+import Identity from '../../../assets/images/identity.png';
+import Agreement from '../../../assets/images/agreement.png';
+import Aum from '../../../assets/images/aum-icon.png';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import React, { useEffect }  from 'react';
+
+const item = {
+    hidden: { y: 100, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: { duration: 0.5 }
+    }
+};
+
+const item2 = {
+  hidden: { y: 100, opacity: 0 },
+  visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.7 }
+  }
+};
+
   export default function Howto() {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+  
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } else {
+        control.start("hidden");
+      }
+    }, [control, inView]);
+
     const styling = {
         backgroundImage: `url('${bg.src}')`,
         backgroundSize: 'cover',
@@ -24,18 +56,35 @@ import {
       <section style={styling}>
       <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'} zIndex={'0'}>
       <VStack spacing={2} textAlign="center" mb={'4rem'}>
+        <motion.div
+                    className="box"
+                    ref={ref}
+                    variants={item}
+                    initial="hidden"
+                    animate={control}
+          >
         <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
             Get into Digital Asset Market With Us!
         </Heading>
+        </motion.div>
+        <motion.div
+                    className="box"
+                    ref={ref}
+                    variants={item2}
+                    initial="hidden"
+                    animate={control}
+        >
         <Text fontSize="32px" color={'white'} fontWeight={'bold'} fontFamily='Poppins' mb={'2rem'}>
             Onboarding process
         </Text>
+        </motion.div>
       </VStack>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign="center" pl={'3%'} pr={'3%'} zIndex={'0'}> 
             <Box
             role={'group'}
             p={6}
             w={'100%'}
+            h={'100%'}
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
@@ -59,11 +108,11 @@ import {
                     </Text>
                 </Stack>
             </Box>
-            
             <Box
             role={'group'}
             p={6}
             w={'100%'}
+            h={'100%'}
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
@@ -87,11 +136,11 @@ import {
                     </Text>
                 </Stack>
             </Box>
-
             <Box
             role={'group'}
             p={6}
             w={'100%'}
+            h={'100%'}
             boxShadow={'2xl'}
             rounded={'20'}
             pos={'relative'}
@@ -112,7 +161,6 @@ import {
                     </Text>
                 </Stack>
             </Box>
-          
         </SimpleGrid>
       </Container>
       </section>

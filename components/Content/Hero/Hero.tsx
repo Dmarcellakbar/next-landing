@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
 import Image from 'next/image';
 import phone from '../../../assets/images/phone-planet.png';
 import { Box, Container, GridItem, Heading, HStack, SimpleGrid,  Text, VStack, Wrap } from '@chakra-ui/react';
@@ -8,12 +8,52 @@ import bg from '../../../assets/images/bg-stardust.png'
 import { useMediaQuery } from 'react-responsive'
 import Running from './Running'
 import Link from 'next/link';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const item = {
+    hidden: { y: 150, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: { duration: 0.6 }
+    }
+};
+
+const item2 = {
+    hidden: { y: 150, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: { duration: 0.8 }
+    }
+};
+
+const item3 = {
+    hidden: { y: 150, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: { duration: 1 }
+    }
+};
 
 export default function Home() {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+  
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } else {
+        control.start("hidden");
+      }
+    }, [control, inView]);
+
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 750px)'
       })
-      const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+    //   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
       
     const styling = {
         backgroundImage: `url('${bg.src}')`,
@@ -37,17 +77,40 @@ export default function Home() {
             minChildWidth='120px' className="align-items-center"
             
             >
-            <GridItem alignItems={'center'}
+            <GridItem 
             display={'flex'}
             flex={'1'}
             >
                 <div>
-                <Heading w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
-                The Best Management Firm Any Crypto Investor Can Dream of
+                <motion.div
+                    className="box"
+                    ref={ref}
+                    variants={item}
+                    initial="hidden"
+                    animate={control}
+                >
+                <Heading textAlign={'left'} w={'stretch'} fontSize='2.88rem' color={'#01E8AA'} fontWeight={'700'} pt={'90px'} pb={'2rem'} lineHeight={'1.3'} fontFamily={'Poppins'}>
+                    The Best Management Firm Any Crypto Investor Can Dream of
                 </Heading>
-                <Text fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} >
+                </motion.div>
+                <motion.div
+                    className="box"
+                    ref={ref}
+                    variants={item2}
+                    initial="hidden"
+                    animate={control}
+                >
+                <Text textAlign={'left'} fontFamily={'Poppins'} fontSize='16px' color={'#FFFFFF6a'} >
                     Our costumized strategy makes crypto investing safer, easier, and more effective for you
-                    </Text>
+                </Text>
+                </motion.div>
+                <motion.div
+                    className="box"
+                    ref={ref}
+                    variants={item3}
+                    initial="hidden"
+                    animate={control}
+                >
                     <HStack spacing='10px' pb={'90px'} >
                         <Box cursor={'pointer'}>
                         <Link href="https://apps.apple.com/sg/app/cfund/id1580696846?l=id" target='_blank'>
@@ -60,6 +123,7 @@ export default function Home() {
                         </Link>
                         </Box>
                     </HStack>
+                </motion.div>
                 </div>
             </GridItem>
             {isDesktopOrLaptop && 

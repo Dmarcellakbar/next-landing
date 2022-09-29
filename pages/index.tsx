@@ -12,6 +12,7 @@ import Crisp from '../components/Chat/crisp'
 import Getnews from '../components/Content/News/Getnews'
 import Head from 'next/head'
 
+
 const Home: NextPage = () => {
 
   return (
