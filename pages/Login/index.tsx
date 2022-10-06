@@ -58,7 +58,7 @@ import Head from 'next/head';
                 </a>
                 </Box>
             </HStack>
-            <Flex style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0px', height: '40%', width: '60%'}}>
+            <Flex style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0px', height: '50%', width: '30%'}}>
                     <Image src={phone} />
             </Flex>
 
