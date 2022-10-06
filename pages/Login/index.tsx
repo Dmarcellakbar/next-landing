@@ -40,7 +40,7 @@ import Head from 'next/head';
             fontWeight={600}
             fontSize={'32px'}
             lineHeight={'110%'}>
-            Login to your accounct
+            Login to your account
           </Heading>
           <Text color={'#FFF'} fontSize={'16px'}>
             For now, the user dashboard can only be accessed through the CFund application,
