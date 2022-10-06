@@ -26,7 +26,9 @@ import Head from 'next/head';
         <Head>
           <link rel="shortcut icon" href="/logo-white.png" />
         </Head>
+        <a href="/">
         <Navbar/>
+        </a>
         <Crisp/>
       <Container maxW={'80rem'} height={'100vh'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
         <Stack
