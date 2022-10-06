@@ -24,7 +24,7 @@ export default class Getnews extends React.Component {
             "https://blog.cfund.me/wp-json/wp/v2/posts?_fields=id,excerpt,content,title,date,_links,_embedded&per_page=4&_embed"
           )
           .then((res) => {
-            console.log(res.data, "data");
+            // console.log(res.data, "data");
             const posts = res.data;
             this.setState({ posts });
           });
