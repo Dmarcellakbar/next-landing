@@ -14,6 +14,7 @@ import {
   import Image from 'next/image';
   import { FaInstagram, FaTwitter, FaTelegram } from 'react-icons/fa';
   import { Link } from 'react-scroll'
+  import NextLink from 'next/link'
 
   const SocialButton = ({
     children,
@@ -93,9 +94,9 @@ import {
             <div style={{ fontWeight: 'bold', fontSize: '24px' }}>
                 <Text>Disclaimer</Text>
               </div>
-              <a href={'https://info.cfund.me/terms-and-conditions/'} >Terms & Conditions</a>
-              <a href={'https://info.cfund.me/terms-and-conditions/'} >Privacy Policy</a>
-              <a href={'https://info.cfund.me/how-to-referrals/'} >How to Referrals</a>
+              <NextLink href={'https://info.cfund.me/terms-and-conditions/'} >Terms & Conditions</NextLink>
+              <NextLink href={'https://info.cfund.me/terms-and-conditions/'} >Privacy Policy</NextLink>
+              <NextLink href={'https://info.cfund.me/how-to-referrals/'} >How to Referrals</NextLink>
             </Stack>
             <Stack align={'flex-start'}>
             <div style={{ fontWeight: 'bold', fontSize: '24px' }}>

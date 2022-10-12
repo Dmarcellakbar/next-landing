@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { Box } from "@chakra-ui/react";
 
 export default function Accordion(props: any) {
   const [isShowing, setIsShowing] = useState(false);
@@ -23,7 +24,7 @@ export default function Accordion(props: any) {
         borderRadius: '6px',
       }}
     >
-      <button
+      <Box
         style={{
           width: "100%",
           position: "relative",
@@ -38,45 +39,21 @@ export default function Accordion(props: any) {
 
         }}
         onClick={toggle}
-        type="button"
+        cursor={'pointer'}
       >
-        <p>{props.title}</p>
+        <div>{props.title}</div>
         {
             isShowing === props.title ?
             <ChevronUpIcon style={{float: 'right', color: '#38b0d2'}}/> :
             <ChevronDownIcon style={{float: 'right', color: '#38b0d2'}}/>
         }      
-        </button>
+        </Box>
       <div
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C",}}
         dangerouslySetInnerHTML={{
           __html: props.content, 
         }}
         
-      />
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
-        dangerouslySetInnerHTML={{
-          __html: props.subcontent, 
-        }}
-      />
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
-        dangerouslySetInnerHTML={{
-          __html: props.subcontent2, 
-        }}
-      />
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", }}
-        dangerouslySetInnerHTML={{
-          __html: props.subcontent3, 
-        }}
-      />
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C", borderBottomLeftRadius: '6px', borderBottomRightRadius: '6px'}}
-        dangerouslySetInnerHTML={{
-          __html: props.subcontent4, 
-        }}
       />
     </div>
   );

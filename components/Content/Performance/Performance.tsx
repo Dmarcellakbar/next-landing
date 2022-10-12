@@ -12,7 +12,7 @@ import Image from 'next/image';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect }  from 'react';
-
+import Link from 'next/link'
 const item = {
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -117,7 +117,7 @@ export default function SplitWithImage() {
                     initial="hidden"
                     animate={control}
           >
-          <a href='Login' target='_blank'><Button id='button-test2' color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></a>
+          <Link href='Login' target='_blank'><Button id='button-test2' color={'white'} fontSize='16px' backgroundColor={'#ffa520'} p={'24px'} fontFamily={'Poppins'}>See Performance Details</Button></Link>
           </motion.div>
         </Stack>
         

@@ -10,6 +10,7 @@ import {
     Button,
     VStack,
     Box,
+    Image
   } from '@chakra-ui/react';
  import dateFormat from "dateformat";
  import Link from "next/link";
@@ -70,7 +71,7 @@ export default class Getnews extends React.Component {
                 mx={-6}
                 mb={4}
                 pos={'relative'}>
-                    <img src={post._embedded["wp:featuredmedia"][0].source_url} style={{ layout: 'fill' }}/>
+                    <Image src={post._embedded["wp:featuredmedia"][0].source_url} style={{ layout: 'fill' }}/>
                 </Box>
                 <Stack>   
                 <Box w='100%' p={'7%'} >
@@ -79,7 +80,7 @@ export default class Getnews extends React.Component {
                             {dateFormat(post.date, "fullDate")}
                             </Text>
                         <br />
-                        <Text fontSize={'16px'} >
+                        <Text fontSize={'16px'} noOfLines={'5'}>
                         {parse(post.excerpt.rendered)}
                         </Text>
                         </Box>
