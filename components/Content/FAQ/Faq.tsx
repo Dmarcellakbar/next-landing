@@ -17,7 +17,7 @@ export default function Faq() {
             FAQ
         </Heading>
     </VStack>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} color={'#FFF'} fontFamily={'Poppins'}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} color={'#FFF'} fontFamily={'Poppins'}>
         <VStack spacing={2} textAlign="left">
             <Accordion 
             title="Estimate yearly profit of CFund?" 
@@ -41,7 +41,7 @@ export default function Faq() {
             <br/><br/> Withdraw (WD) will be transferred on Thursday - Friday in accordance with the Bank's working hour. `}
             />
             <Accordion 
-            title="Is it possible to register as a new customer without an invitation code?" 
+            title={`Is it possible to register as a new customer without an invitation code?`}
             content="Apologies, as of now CFUND is still on closed loop period and only customers with invitation code are able to register." 
             />
             <Accordion 

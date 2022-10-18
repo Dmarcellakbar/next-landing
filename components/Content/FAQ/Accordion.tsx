@@ -29,7 +29,7 @@ export default function Accordion(props: any) {
           width: "100%",
           position: "relative",
           textAlign: "left",
-          padding: "16px",
+          padding: "10px",
           border: "none",
           background: "#01264C",
           outline: "none",
