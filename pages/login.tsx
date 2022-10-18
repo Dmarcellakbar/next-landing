@@ -10,16 +10,16 @@ import {
     VStack,
   } from '@chakra-ui/react';
   import Image from 'next/image';
-  import AppStoreBadge from '../../assets/images/ios.png';
-  import PlayStoreBadge from '../../assets/images/android.png';
-  import phone from '../../assets/images/phone-planet.png';
-import NavbarDefault from '../../components/Layout/Navbar/NavbarDefault';
-import Crisp from '../../components/Chat/crisp';
+  import AppStoreBadge from '../assets/images/ios.png';
+  import PlayStoreBadge from '../assets/images/android.png';
+  import phone from '../assets/images/phone-planet.png';
+import NavbarDefault from '../components/Layout/Navbar/NavbarDefault';
+import Crisp from '../components/Chat/crisp';
 import Head from 'next/head';
 import Link from 'next/link'
 import React, { useEffect }  from 'react';
 import { motion, useAnimation } from "framer-motion";
-import Particle from '../../components/Animation/Particle';
+import Particle from '../components/Animation/Particle';
 import { useInView } from "react-intersection-observer";
 import { useMediaQuery } from 'react-responsive'
 

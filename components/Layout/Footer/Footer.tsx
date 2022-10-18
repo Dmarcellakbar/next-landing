@@ -12,7 +12,7 @@ import {
   import { ReactNode } from 'react';
   import Logo from '../../../assets/images/logo-white.png'
   import Image from 'next/image';
-  import { FaInstagram, FaTwitter, FaTelegram } from 'react-icons/fa';
+  import { FaInstagram, FaTwitter, FaTelegram, FaYoutube } from 'react-icons/fa';
   import { Link } from 'react-scroll'
   import NextLink from 'next/link'
 
@@ -111,6 +111,9 @@ import {
                 </SocialButton>
                 <SocialButton label={'Telegram'} href={'https://t.me/CfundID_CO'}>
                     <FaTelegram />
+                </SocialButton>
+                <SocialButton label={'Youtube'} href={'https://www.youtube.com/channel/UCN_yGXBSi8oGw6JDkPd-5Og'}>
+                    <FaYoutube />
                 </SocialButton>
             </Stack>
             </Stack>
