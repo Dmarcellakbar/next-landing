@@ -50,7 +50,7 @@ export default function Accordion(props: any) {
              
         </Box>
       <div
-        style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C",}}
+        style={{ display: isShowing ? "block" : "none", padding: "12px",  background: "#01264C",}}
         dangerouslySetInnerHTML={{
           __html: props.content, 
         }}
