@@ -12,8 +12,8 @@ import {
   import Image from 'next/image';
   import AppStoreBadge from '../../assets/images/ios.png';
   import PlayStoreBadge from '../../assets/images/android.png';
-  import phone from '../../assets/images/phone-planet-scale.png';
-import Navbar from '../../components/Layout/Navbar/Navbar';
+  import phone from '../../assets/images/phone-planet.png';
+import NavbarDefault from '../../components/Layout/Navbar/NavbarDefault';
 import Crisp from '../../components/Chat/crisp';
 import Head from 'next/head';
 import Link from 'next/link'
@@ -51,9 +51,11 @@ import { useMediaQuery } from 'react-responsive'
         <div id="tsparticles">
          <Particle/>
          </div>
-        <a href="/">
-        <Navbar/>
-        </a>
+        <Link href="/">
+          <Wrap>
+            <NavbarDefault/>
+          </Wrap>
+        </Link>
         <Crisp/>
       <Container maxW={'80rem'} height={'100vh'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
         <VStack
@@ -86,7 +88,7 @@ import { useMediaQuery } from 'react-responsive'
                 </Box>
             </HStack>
             {isDesktopOrLaptop && 
-              <Wrap style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0', width: '25%'}}>
+              <Wrap style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '0', width: '17rem'}}>
                     <Image src={phone}/>
               </Wrap>
             }

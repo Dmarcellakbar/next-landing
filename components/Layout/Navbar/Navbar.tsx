@@ -65,7 +65,7 @@ export default function Simple() {
                     FAQ
                 </Link>
                 </Box>
-                <NextLink href='Login' style={{ paddingRight: '15px' }}>
+                <NextLink href='login' style={{ paddingRight: '15px' }}>
                     <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'} fontFamily={'Poppins'}>
                         Login
                     </Button>
@@ -114,7 +114,7 @@ export default function Simple() {
                     FAQ
                 </Link>
                 </Box>
-                <NextLink  href='Login'>
+                <NextLink  href='login'>
                     <Button id='button-test2' color='white' bgColor='#FFA520' variant='solid' w={'100%'}>
                         Login
                     </Button>

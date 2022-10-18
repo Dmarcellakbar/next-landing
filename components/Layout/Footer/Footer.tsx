@@ -106,11 +106,11 @@ import {
                 <SocialButton label={'Twitter'} href={'https://twitter.com/cfundasia'}>
                     <FaTwitter />
                 </SocialButton>
-                {/* <SocialButton label={'Telegram'} href={'#'}>
-                    <FaTelegram />
-                </SocialButton> */}
                 <SocialButton label={'Instagram'} href={'https://www.instagram.com/cfundasia/'}>
                     <FaInstagram />
+                </SocialButton>
+                <SocialButton label={'Telegram'} href={'https://t.me/CfundID_CO'}>
+                    <FaTelegram />
                 </SocialButton>
             </Stack>
             </Stack>

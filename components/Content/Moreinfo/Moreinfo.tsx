@@ -6,6 +6,7 @@ import { ChatIcon, EmailIcon } from '@chakra-ui/icons';
 
 
 export default function Moreinfo() {
+
     const stylingbg = {
         backgroundImage: `url('${bg.src}')`,
         backgroundSize: 'cover',
@@ -35,9 +36,14 @@ export default function Moreinfo() {
                 <HStack>
                 <Box py={6} style={{ marginBottom: '2rem' }}>
                     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={15}>
-                        <Link href={'https://go.crisp.chat/chat/embed/?website_id=552d54a9-3fee-4c73-94f8-19357f185101'} ><Button gap={'12px'} id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>
+                        <Button onClick={()=> {
+                            if (typeof window !== "undefined"){
+                                window.$crisp.push(['do', 'chat:open'])
+                            }
+                        }}
+                        gap={'12px'} id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>
                             <ChatIcon/><Text>Chat with Us</Text>
-                            </Button></Link>
+                            </Button>
                         <Link href='mailto:cs@cfund.id'><Button gap={'12px'} id='button-test3' variant='outline' p={'24px'} mb={'2rem'} color={'#ffa520'} borderColor={'#ffa520'}  fontSize={'16px'}>
                             <EmailIcon/><Text>Send Email</Text>
                             </Button></Link>

@@ -41,12 +41,13 @@ export default function Accordion(props: any) {
         onClick={toggle}
         cursor={'pointer'}
       >
-        <div>{props.title}</div>
+        <div>{props.title}
         {
             isShowing === props.title ?
             <ChevronUpIcon style={{float: 'right', color: '#38b0d2'}}/> :
             <ChevronDownIcon style={{float: 'right', color: '#38b0d2'}}/>
-        }      
+        } </div>
+             
         </Box>
       <div
         style={{ display: isShowing ? "block" : "none", padding: "16px",  background: "#01264C",}}

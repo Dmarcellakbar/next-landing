@@ -47,7 +47,7 @@ export default class Getnews extends React.Component {
                 <Heading as="h1" color={'white'} fontSize="2.88rem" fontWeight={'bold'} fontFamily='Poppins'>
                     News & Article
                 </Heading>
-            </VStack>
+            
             <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10} textAlign="left" pl={'3%'} pr={'3%'} > 
             {this.state.posts.map((post) => (
             <Link href={post._embedded["wp:featuredmedia"][0].link} id="button-test">
@@ -90,6 +90,7 @@ export default class Getnews extends React.Component {
 
             ))}
             </SimpleGrid>
+            </VStack>
             <VStack spacing={2} textAlign="center" mt={'2rem'} mb={'2rem'}>
             <Link href={'https://blog.cfund.me/'} ><Button id='button-test2' p={'24px'} mb={'2rem'} color={'white'} backgroundColor={'#ffa520'} fontSize={'16px'}>View More</Button></Link>
             </VStack>
