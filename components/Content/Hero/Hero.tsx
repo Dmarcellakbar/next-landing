@@ -1,11 +1,10 @@
 import React, { useEffect }  from 'react';
 import Image from 'next/image';
 import phone from '../../../assets/images/phone-planet.png';
-import { Box, Container, GridItem, Heading, HStack, SimpleGrid,  Text, VStack, Wrap } from '@chakra-ui/react';
+import { Box, Container, GridItem, Heading, Hide, HStack, Show, SimpleGrid,  Text, VStack, Wrap } from '@chakra-ui/react';
 import AppStoreBadge from '../../../assets/images/ios.png';
 import PlayStoreBadge from '../../../assets/images/android.png';
 import bg from '../../../assets/images/bg-stardust-nostar.png'
-import { useMediaQuery } from 'react-responsive'
 import Running from './Running'
 import Link from 'next/link';
 import { motion, useAnimation } from "framer-motion";
@@ -51,9 +50,6 @@ export default function Home() {
       }
     }, [control, inView]);
 
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 750px)'
-      })
 
   return (
     <section style={{ 
@@ -130,7 +126,7 @@ export default function Home() {
                 </motion.div>
                 </div>
             </GridItem>
-            {isDesktopOrLaptop && 
+            <Hide below='sm'>
                 <GridItem 
                 display={'flex'}
                 flex={'1'}
@@ -139,7 +135,17 @@ export default function Home() {
                         <Image  src={phone} />
                 </Wrap>
                 </GridItem>
-            }
+            </Hide>
+            <Show above='md'>
+                <GridItem 
+                display={'flex'}
+                flex={'1'}
+                >  
+                <Wrap style={{ position: 'absolute', display: 'flex', flex: '1', bottom: '55px', right: '0', width: '50%' }}>
+                        <Image  src={phone} />
+                </Wrap>
+                </GridItem>
+            </Show>
 
             </SimpleGrid>
         </Container>

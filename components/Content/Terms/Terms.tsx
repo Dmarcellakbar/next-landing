@@ -7,11 +7,11 @@ import {
     Stack,
     Button,
     VStack,
+    Show,
   } from '@chakra-ui/react';
   import Image from 'next/image';
   import bg from '../../../assets/images/bg-fee.png'
   import cycle from '../../../assets/images/cycle-ilustration.png';
-  import { useMediaQuery } from 'react-responsive'
   import { motion, useAnimation } from "framer-motion";
   import { useInView } from "react-intersection-observer";
   import React, { useEffect }  from 'react';
@@ -57,12 +57,6 @@ import {
       }
     }, [control, inView]);
 
-
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 900px)'
-      })
-      const isMobile = useMediaQuery({ query: '(max-width: 900px)' })
-      
     const styling = {
         backgroundImage: `url('${bg.src}')`,
         backgroundSize: 'cover',
@@ -71,7 +65,7 @@ import {
       <section style={styling}>
       <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        {isMobile &&
+        <Show breakpoint='(max-width: 900px)'>
         <Flex>
           <motion.div
             className="box"
@@ -83,7 +77,7 @@ import {
           <Image src={cycle}/>
           </motion.div>
         </Flex>
-        }
+        </Show>
           <motion.div
                     className="box"
                     ref={ref}
@@ -102,7 +96,7 @@ import {
             </Text>
           </Stack>
           </motion.div>
-        {isDesktopOrLaptop &&
+          <Show breakpoint='(min-width: 900px)'>
         <Flex>
         <motion.div
             className="box"
@@ -114,7 +108,7 @@ import {
           <Image src={cycle}/>
           </motion.div>
         </Flex>
-        }
+        </Show>
         </SimpleGrid>
 
       </Container>

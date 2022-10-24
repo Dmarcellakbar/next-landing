@@ -6,6 +6,7 @@ import {
   Text,
   Stack,
   Button,
+  Show,
 } from '@chakra-ui/react';
 import chartNew from '../../../assets/images/chart-new.png'
 import Image from 'next/image';
@@ -13,7 +14,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect }  from 'react';
 import Link from 'next/link'
-import { useMediaQuery } from 'react-responsive'
 
 const item = {
   hidden: { x: -100, opacity: 0 },
@@ -75,13 +75,6 @@ export default function SplitWithImage() {
       }
     }, [control, inView]);
 
-    const isDesktopOrLaptop = useMediaQuery({
-      query: '(min-width: 900px)'
-    })
-    const isMobile = useMediaQuery({
-      query: '(max-width: 900px)'
-    })
-
   const styling = {
     backgroundColor: '#011535',
     backgroundSize: 'cover',
@@ -91,18 +84,19 @@ export default function SplitWithImage() {
     <Container maxW={'80rem'} pt={'8rem'} pb={'8rem'} verticalAlign={'center'}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
       <Flex>
-      {isDesktopOrLaptop && 
+      <Show breakpoint='(min-width: 900px)'>
       <motion.div
-                    className="box"
-                    ref={ref}
-                    variants={item}
-                    initial="hidden"
-                    animate={control}
+          className="box"
+          ref={ref}
+          variants={item}
+          initial="hidden"
+          animate={control}
           >
         <Image src={chartNew}/>
         </motion.div>
-      }
-      {isMobile && 
+      </Show>
+
+      <Show breakpoint='(max-width: 900px)'>
       <motion.div
                     className="box"
                     ref={ref}
@@ -112,7 +106,7 @@ export default function SplitWithImage() {
           >
         <Image src={chartNew}/>
         </motion.div>
-      }
+      </Show>
       </Flex>
         <Stack spacing={4} align={'left'} verticalAlign={'middle'} alignContent={'center'}>
           <motion.div
